@@ -1,0 +1,144 @@
+.header
+  padding-top: 8px
+  padding-bottom: 60px
+
+.header__content-top
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 55px
+  padding: 33px 51px 42px 85px
+  border-radius: 7px
+  background-color: $color-title
+
+  &::after
+    content: ''
+    position: absolute
+    bottom: -15px
+    left: 0
+    width: 100%
+    height: 2px
+    background-color: #c4c4c4
+
+    +max-w($laptop)
+      bottom: -7px
+      height: 1px
+
+    +max-w($mobile)
+      display: none
+
+  +max-w($desktop)
+    margin-bottom: 36px
+    padding: 24px 46px 18px 66px
+
+  +max-w($laptop)
+    margin-bottom: 26px
+    padding: 22px 13px 11px 33px
+
+  +max-w($laptop)
+    padding: 24px 30px 18px 33px
+
+  +max-w($mobile)
+    padding: 17px
+
+.header__menu
+  display: flex
+  align-items: center
+
+  +max-w($tablet)
+    display: none
+
+.header__menu-phone
+  position: relative
+  margin-right: 50px
+  color: #fff
+  font-weight: $font-weight-bold
+  font-size: 31px
+  line-height: 1.25
+  text-decoration: none
+  text-align: center
+
+  &::before
+    content: ''
+    position: absolute
+    top: 8px
+    left: -28px
+    width: 22px
+    height: 22px
+    background-image: url('../header/phone.svg') 
+    background-repeat: no-repeat
+
+    +max-w($desktop)
+      left: -21px
+      background-image: url('../header/phone-desktop.svg')
+
+    +max-w($laptop)
+      top: 5px
+      left: -18px
+      background-image: url('../header/phone-laptop.svg')
+  
+  +max-w($desktop)
+    margin-right: 25px
+    font-size: 22px
+  
+  +max-w($laptop)
+    margin-right: 16px
+    font-size: 18px
+
+.header__menu-phone__description
+  display: block
+  margin-top: 9px
+  font-weight: $font-weight-semi-bold
+  font-size: 14px
+  line-height: 1.2
+
+  +max-w($laptop)
+    font-size: 11px
+    line-height: 1.3
+
+.header__menu-request
+  margin-right: 21px
+  padding: 20px 86px
+  border: 3px solid #fff
+  border-radius: 7px
+  color: #fff
+  font-size: 12px
+  font-weight: $font-weight-semi-bold
+  line-height: 1.25
+  text-transform: uppercase
+  text-decoration: none
+
+  &:hover
+    color: #65C466
+    background-color: #fff
+
+  +max-w($desktop)
+    margin-bottom: 10px
+    padding: 13px 50px
+    border-width: 2px
+
+  +max-w($laptop) 
+    margin-right: 34px
+    padding: 13px 35px
+    border-width: 1px
+    font-size: 11px
+    line-height: 1.3
+
+.header__menu-registration
+  display: flex
+  flex-direction: column-reverse
+  align-items: center
+  padding: 3px 55px 0px 50px
+  color: #fff
+  font-weight: $font-weight-semi-bold
+  font-size: 16px
+  line-height: 1.25
+  text-decoration: none
+
+  +max-w($desktop)
+    padding: 12px 22px 0px 1px
+    font-size: 12px
+
+  +max-w($laptop)
+    font-size: 9px
