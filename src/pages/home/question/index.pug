@@ -1,0 +1,19 @@
+section.question
+  .container
+    .question__wrap
+      .question__content
+        h1.question__content-title Задайте вопрос юристу онлайн
+        .question__content-description
+          p.question__content-text 
+            | Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.
+          .question__icon
+            img.question__icon-img(src="images/online.svg", alt="Online")
+            span.question__icon-text 30 онлайн
+        form.question__form(action="#") 
+          input.question__form-input(type="number", placeholder="Введите номер Вашего телефона")
+          textarea.question__form-textare(placeholder="Введите Ваш вопрос...") 
+          .question__form-checkbox
+            input#policy.question__form-item.question__form-item--custom(type="checkbox", name="policy") 
+            label(for="policy")  Нажимая кнопку “Отправить” вы соглашаетесь с политикой конфидециальности
+          button.question__form-submit(type="submit") Отправить вопрос
+    
