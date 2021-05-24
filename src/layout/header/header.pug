@@ -1,2 +1,22 @@
-.container 
-  header.header HEADER
+header.header
+  .container
+    .header__content-top
+      a.header__logo(href="#")
+        picture 
+          source(srcset="images/logo-mobile.svg", media="(max-width: 320px)")
+          source(srcset="images/logo-tablet.svg", media="(max-width: 790px)")
+          source(srcset="images/logo-laptop.svg", media="(max-width: 1024px)")
+          source(srcset="images/logo-desktop.svg", media="(max-width: 1500px)")
+          img(src="images/logo.png", alt="logo")
+      .header__menu
+        a.header__menu-phone(href="tel:+70000000000") +7 (000) 000-00-00
+          span.header__menu-phone__description Бесплатная консультация
+        a.header__menu-request(href="#")  Заказать звонок
+        a.header__menu-registration(href="#")  Войти/регестрация
+          picture 
+            source(srcset="images/person-desktop.svg", media="(max-width: 1500px)")
+            img.header__menu-registration-img(src="images/person.svg", alt="Person")
+      .nav__burger.js-burger
+        span.nav__burger-item
+    .header__content-bottom
+      include ../navigation/index

@@ -1,0 +1,348 @@
+.question
+  background-image: url('../question/question-bg.png')
+  background-repeat: no-repeat
+  background-position: 50px -72px
+
+  +max-w($desktop)
+    background-image: url('../question/question-bg-desktop.png')
+
+  +max-w($laptop)
+    background-image: url('../question/question-bg-laptop.png')
+    background-position: 50px -16px
+
+  +max-w($tablet)
+    background-image: url('../question/question-bg-tablet.png')
+    background-position: 12px 0px
+
+  +max-w($mobile)
+    background-image: url('../question/question-bg-mobile.png')
+    background-position: 29px 130px
+
+.question__wrap
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.question__content
+  max-width: 952px
+
+  +max-w($desktop)
+    max-width: 670px
+
+  +max-w($laptop)
+    max-width: 537px
+
+  +max-w($tablet)
+    max-width: 385px
+
+.question__content-title
+  margin-bottom: 23px
+  color: $color-title
+  font-family: $font-family-third
+  font-size: 49px
+  line-height: 1.2
+
+  +max-w($desktop)
+    margin-bottom: 15px
+    font-size: 35px
+
+  +max-w($laptop)
+    font-size: 28px
+
+  +max-w($tablet)
+    max-width: 300px
+    font-size: 23px
+
+.question__content-description
+  display: flex
+  margin-bottom: 27px
+
+  +max-w($tablet)
+    position: relative
+    margin-bottom: 18px
+
+  +max-w($mobile)
+    margin-bottom: 296px
+
+.question__content-text
+  max-width: 830px
+  color: #414141
+  font-size: 22px
+  line-height: 1.2
+
+  +max-w($desktop)
+    max-width: 580px
+    font-size: 16px
+
+  +max-w($laptop)
+    max-width: 450px
+    font-size: 12px
+
+  +max-w($tablet)
+    font-size: 12px
+
+.question__icon
+  position: relative
+  display: flex
+  flex-direction: column
+  padding: 12px 19px 19px 21px
+  border-radius: 50%
+  background: #65C466
+
+  +max-w($desktop)
+    padding: 9px 14px 12px 15px
+
+  +max-w($tablet)
+    position: absolute
+    top: -70px
+    right: 14px
+
+  +max-w($mobile)
+    display: none
+
+  &::after
+    content: ""
+    position: absolute
+    top: -7px
+    right: -7px
+    width: 108px
+    height: 108px
+    border-radius: 50%
+    background-color: #fff
+    box-shadow: 0px 5px 42px rgba(0, 0, 0, 0.25), 0px 5px 42px rgba(0, 0, 0, 0.15)
+    z-index: -1
+
+    +max-w($desktop)
+      top: -4px
+      right: -4px
+      width: 77px
+      height: 77px
+
+    +max-w($laptop)
+      top: -3px
+      right: -3px
+      width: 64px
+      height: 64px
+
+.question__icon-img
+  width: 48px
+  height: 47px
+  margin-bottom: 4px
+
+  +max-w($desktop)
+    width: 33px
+    height: 33px
+
+  +max-w($laptop)
+    width: 26px
+    height: 26px
+
+.question__icon-text
+  font-weight: 600
+  font-size: 11px
+  line-height: 1.25
+  color: #FFFFFF
+
+  +max-w($desktop)
+    font-size: 8px
+
+  +max-w($laptop)
+    font-size: 6px
+
+.question__form
+  display: flex
+  flex-direction: column
+
+  +max-w($tablet)
+    position: relative
+
+.question__form-input
+  margin-bottom: 25px
+  padding: 25px 10px 25px 28px
+  border: 1px solid #CCCCCC
+  border-radius: 7px
+  color: #C2C2C2
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.1)
+  font-size: 19px
+  line-height: 1.2
+
+  +max-w($desktop)
+    padding: 18px 10px 17px 20px
+    font-size: 14px
+
+  +max-w($laptop)
+    margin-bottom: 12px
+    padding: 15px 10px 16px 16px
+    font-size: 11px
+
+  +max-w($tablet)
+    margin-bottom: 14px
+    padding: 13px 10px 13px 14px
+
+  +max-w($mobile)
+    margin-bottom: 11px
+    padding: 10px 10px 10px 12px
+    font-size: 11px
+
+.question__form-textare
+  margin-bottom: 30px
+  padding: 28px 10px 100px 28px
+  border: 1px solid #CCCCCC
+  border-radius: 7px
+  color: #C2C2C2
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.1)
+  font-size: 19px
+  line-height: 1.2
+  resize: none
+
+  +max-w($desktop)
+    padding: 24px 10px 100px 20px
+    font-size: 14px
+    line-height: 1.15
+
+  +max-w($laptop)
+    margin-bottom: 16px
+    padding: 19px 10px 80px 16px
+    font-size: 11px  
+  
+  +max-w($tablet)
+    padding: 13px 10px 55px 14px
+
+  +max-w($mobile)
+  padding: 10px 10px 66px 12px
+
+.question__form-checkbox
+  display: flex
+  margin-bottom: 35px
+
+  +max-w($laptop)
+    margin-bottom: 20px
+
+  +max-w($tablet)
+    max-width: 234px
+
+  +max-w($mobile)
+    max-width: 195px
+
+.question__form-item--custom 
+  position: absolute
+  z-index: -1
+  opacity: 0
+
+
+.question__form-item--custom + label 
+  position: relative
+  padding-left: 40px
+  font-size: 19px
+  line-height: 1.2
+  vertical-align: middle
+  cursor: pointer
+
+  +max-w($desktop)
+    padding-left: 30px
+    font-size: 14px
+
+  +max-w($laptop)
+    font-size: 11px
+
+  +max-w($mobile)
+    padding-left: 20px
+    font-size: 8px
+
+
+.question__form-item--custom + label:before 
+  content: ''
+  position: absolute
+  top: -1px
+  left: 0
+  width: 25px
+  height: 25px
+  border: 2px solid #65C466
+  border-radius: 7px
+
+  +max-w($desktop)
+    width: 18px
+    height: 18px
+
+  +max-w($laptop)
+    width: 15px
+    height: 15px
+    border-radius: 5px
+
+  +max-w($mobile)
+    width: 12px
+    height: 12px
+
+
+.question__form-item--custom + label:after 
+  content: ''
+  position: absolute
+
+
+.question__form-item--custom:checked + label:after 
+  position: absolute
+  top: 3px
+  left: 4px
+  border: 1px solid white
+  border-radius: 4px
+  background: #65C466
+  height: 17px
+  width: 17px
+
+  +max-w($desktop)
+    top: 2px
+    left: 3px
+    width: 12px
+    height: 12px
+
+  +max-w($laptop)
+    top: 1px
+    left: 2px
+    width: 11px
+    height: 11px
+    border-radius: 2px
+
+  +max-w($mobile)
+    width: 8px
+    height: 8px
+    border-radius: 3px
+
+.question__form-submit
+  max-width: 264px
+  padding: 18px 44px
+  border: none
+  border-radius: 7px
+  box-shadow: 0px 5px 21px rgba(0, 0, 0, 0.25)
+  color: #FFFFFF
+  background: #65C466
+  font-weight: $font-weight-semi-bold
+  font-size: 19px
+  line-height: 1.2
+  cursor: pointer
+
+  &:hover
+    color: #65C466
+    background: #FFFFFF
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+
+  +max-w($desktop)
+    max-width: 186px
+    padding: 13px 31px
+    font-size: 13px
+
+  +max-w($laptop)
+    max-width: 149px
+    padding: 10px 24px
+    font-size: 10px
+
+  +max-w($tablet)
+    position: absolute
+    bottom: 26px
+    right: 9px
+    padding: 9px 21px
+    font-size: 9px
+
+  +max-w($mobile)
+    padding: 7px 17px
+    border-radius: 3px
+    font-size: 7px

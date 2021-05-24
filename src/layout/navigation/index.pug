@@ -1,0 +1,76 @@
+-
+  var subNav = [
+    {
+      link: 'Оконные системы',
+      img: 'images/arrow-right.svg',
+    },
+    {
+      link: 'Фасадные системы',
+      img: 'images/arrow-right.svg',
+      class: 'nav__item--active',
+      level: [
+        {
+          link: 'Структурный фасад'
+        },
+        {
+          link: 'Полуструктурный “горизонтальная линия”'
+        },
+        {
+          link: 'Цветные МФУ'
+        },
+        {
+          link: 'Измерительное оборудование'
+        }
+      ]
+    },
+    {
+      link: 'Уличная мебель',
+      img: 'images/arrow-right.svg'
+    },
+    {
+      link: 'Мультимедиа проекторы',
+      img: 'images/arrow-right.svg',
+    },
+    {
+      link: 'Цветные МФУ',
+      img: 'images/arrow-right.svg',
+    },
+    {
+      link: 'Измерительное оборудование',
+      img: 'images/arrow-right.svg',
+    }
+  ]
+
+nav.nav.js-open-nav
+  ul.nav__list
+    li.nav__item 
+      a.nav__link.nav__link--current(href="#") Компания
+        svg.nav__link-img.nav__link-img--arrow(width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg")
+          path(d="M13.4393 15.0088L24.4037 2.48302C24.7543 2.06835 24.7442 1.40758 24.3812 1.00712C24.0271 0.616439 23.4657 0.616456 23.1117 1.00715L12.7933 12.795L2.47416 1.00778C2.11736 0.600283 1.53893 0.600301 1.18216 1.00782C0.825438 1.41546 0.825458 2.07616 1.1822 2.48372L12.1473 15.0089C12.5042 15.4164 13.0826 15.4164 13.4393 15.0088Z" fill="#414141")
+    li.nav__item.nav__item--active 
+      a.nav__link(href="#") каталог
+        svg.nav__link-img.nav__link-img--arrow(width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg")
+          path(d="M13.4393 15.0088L24.4037 2.48302C24.7543 2.06835 24.7442 1.40758 24.3812 1.00712C24.0271 0.616439 23.4657 0.616456 23.1117 1.00715L12.7933 12.795L2.47416 1.00778C2.11736 0.600283 1.53893 0.600301 1.18216 1.00782C0.825438 1.41546 0.825458 2.07616 1.1822 2.48372L12.1473 15.0089C12.5042 15.4164 13.0826 15.4164 13.4393 15.0088Z" fill="#414141")
+      ul.nav__sub-list.nav__sub-list--two
+        each item in subNav
+          li.nav__sub-item(class=`${item.class}`) 
+            a.nav__sub-link(href="#")= item.link
+            img.sub__nav-img(src=`${item.img}`, alt="Arrow")
+            if item.level
+              ul.nav__sub-list.nav__sub-list--three
+                each element in item.level
+                  li.nav__sub-item
+                    a.nav__sub-link(href="#")= element.link 
+    li.nav__item 
+      a.nav__link(href="#") контакты
+    li.nav__item 
+      a.nav__link(href="#") вопросы-ответы 
+    li.nav__item 
+      a.nav__link(href="#") прайс-лист
+    li.nav__item 
+      a.nav__link(href="#") Услуги  
+    li.nav__item 
+      a.nav__link(href="#")
+        svg.nav__link-img.nav__link-img--search(width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg")
+          path(d="M34.5964 32.0458L24.6868 22.1362C26.5663 19.8157 27.6977 16.8657 27.6977 13.6539C27.6977 6.20826 21.6401 0.150696 14.1945 0.150696C6.74891 0.150696 0.691406 6.20826 0.691406 13.6539C0.691406 21.0995 6.74898 27.1571 14.1946 27.1571C17.4064 27.1571 20.3564 26.0256 22.6769 24.1461L32.5865 34.0557C32.8641 34.3332 33.314 34.3332 33.5916 34.0557L34.5965 33.0509C34.874 32.7733 34.874 32.3233 34.5964 32.0458ZM14.1946 24.3143C8.31612 24.3143 3.5342 19.5324 3.5342 13.6539C3.5342 7.77541 8.31612 2.99349 14.1946 2.99349C20.0731 2.99349 24.855 7.77541 24.855 13.6539C24.855 19.5324 20.0731 24.3143 14.1946 24.3143Z" fill="#414141")
+
