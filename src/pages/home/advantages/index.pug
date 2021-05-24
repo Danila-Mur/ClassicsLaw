@@ -1,0 +1,37 @@
+-
+  var cards = [
+    {
+      img: "images/advantages-card-1.svg",
+      title: "Низкие цены и широкий ассортимент ",
+      text: "Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке дальнейших направлений развития."
+    },
+    {
+      img: "images/advantages-card-2.svg",
+      title: "Широкая сеть представительств ",
+      text: "Таким образом консультация с широким активом способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач."
+    },
+    {
+      img: "images/advantages-card-3.svg",
+      title: "Весь товар сертифицирован ",
+      text: "С другой стороны консультация с широким активом позволяет оценить значение новых предложений. Значимость этих проблем настолько очевидна, что реализация намеченных планов."
+    },
+    {
+      img: "images/advantages-card-4.svg",
+      title: "Оперативная доставка и выгрузка товара",
+      text: "Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций."
+    },
+  ]
+
+section.advantages
+  .container
+    .advantages__header 
+      h2.advantages__header-title Наши преимущества 
+      span.advantages__header-text Команда опытных юристов 
+    .advantages__cards 
+      each card in cards 
+        .advantages__card 
+          .advantages__card-wrap
+            img.advantages__card-img(src=`${card.img}`, alt="Advantages card")
+            span.advantages__card-title= card.title
+          p.advantages__card-text= card.text
+
