@@ -1,0 +1,80 @@
+-
+  var cards = [
+    {
+      image: 'images/card-img-1.jpg',
+      title: 'Строительство зданий',
+      text: 'Осуществляется от имени и в интересах лиц, участвующих в деле: сторон, третьих лиц, заявителей и иных заинтересованных лиц.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+    {
+      image: 'images/card-img-2.jpg',
+      title: 'Ремонт оборудования',
+      text: 'Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компаний.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+    {
+      image: 'images/card-img-3.jpg',
+      title: 'Курсы английского',
+      text: 'Проверка финансово-экономической деятельности организации, проводимая аудитором.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+    {
+      image: 'images/card-img-1.jpg',
+      title: 'Строительство зданий',
+      text: 'Осуществляется от имени и в интересах лиц, участвующих в деле: сторон, третьих лиц, заявителей и иных заинтересованных лиц.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+    {
+      image: 'images/card-img-2.jpg',
+      title: 'Ремонт оборудования',
+      text: 'Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компаний.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+    {
+      image: 'images/card-img-3.jpg',
+      title: 'Курсы английского',
+      text: 'Проверка финансово-экономической деятельности организации, проводимая аудитором.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+    {
+      image: 'images/card-img-1.jpg',
+      title: 'Строительство зданий',
+      text: 'Осуществляется от имени и в интересах лиц, участвующих в деле: сторон, третьих лиц, заявителей и иных заинтересованных лиц.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+    {
+      image: 'images/card-img-2.jpg',
+      title: 'Ремонт оборудования',
+      text: 'Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компаний.',
+      link: 'Подробнее',
+      gradient: ' linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%)'
+    },
+  ]
+
+section.services
+  .container
+    .services__header 
+      h2.services__header-title Предоставляемые услуги
+      p.services__header-text 
+        | Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.
+    // Slider main container
+    .swiper-container
+      .swiper-wrapper
+        each item in cards
+          .swiper-slide.services__card(style=`background: ${item.gradient}, url('${item.image}') no-repeat center/cover;`)
+            span.services__card-title= item.title
+            p.services__card-text= item.text 
+            a.services__card-link(href="#")= item.link 
+      .swiper-button-prev.button__slider
+        img.button__slider-img(src="images/arrow-left.svg", alt="Arrow left")
+      .swiper-button-next.button__slider
+        img.button__slider-img(src="images/arrow-right.svg", alt="Arrow right")
+      .swiper-pagination
+        
