@@ -1,0 +1,23 @@
+section.help 
+  .container 
+    .help__inner 
+      .help__content 
+        h2.help__content-title Юридическая помощь 
+          span.help__content-title.help__content-title--black начинается с консультации
+        .help__content-description 
+          span.description-item Заполните форму заявки , что бы получить первую бесплатную консультацию по Вашей ситуации
+          span.description-item Наш менеджер свяжется с вами в ближайшее время 
+      picture.help__bg
+        source(srcset="images/iphone-mobile.png", media="(max-width: 420px)")
+        source(srcset="images/iphone-tablet.png", media="(max-width: 790px)")
+        source(srcset="images/iphone-laptop.png", media="(max-width: 1024px)")
+        source(srcset="images/iphone-desktop.png", media="(max-width: 1500px)")
+        img(src="images/iphone.png", alt="Iphone")
+      form.help__form(action="#") 
+        label.help__form-label(for="#") Введите Ваше имя
+        input.help__form-input.help__form-input--person(type="text")
+        label.help__form-label(for="#") Введите номер телефона
+        input.help__form-input.help__form-input--tel.js-input(type="tel")
+        button.help__form-submit(type="submit") Получить консультацию 
+        span.help__form-data Нажимая на кнопку, Вы даете согласие на обработку 
+          a.help__form-link(href="#")  персональных данных

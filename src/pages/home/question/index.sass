@@ -1,20 +1,26 @@
 .question
+  padding-bottom: 74px
   background-image: url('../question/question-bg.png')
   background-repeat: no-repeat
   background-position: 50px -72px
 
   +max-w($desktop)
+    padding-bottom: 32px
     background-image: url('../question/question-bg-desktop.png')
+    background-position: 50px -152px
 
   +max-w($laptop)
+    padding-bottom: 43px
     background-image: url('../question/question-bg-laptop.png')
     background-position: 50px -16px
 
   +max-w($tablet)
+    padding-bottom: 36px
     background-image: url('../question/question-bg-tablet.png')
     background-position: 12px 0px
 
   +max-w($mobile)
+    padding-bottom: 12px
     background-image: url('../question/question-bg-mobile.png')
     background-position: 29px 130px
 
@@ -57,12 +63,17 @@
   display: flex
   margin-bottom: 27px
 
+  +max-w($desktop) 
+    margin-bottom: 33px
+
+  +max-w($laptop)
+    margin-bottom: 22px  
+
   +max-w($tablet)
     position: relative
-    margin-bottom: 18px
 
   +max-w($mobile)
-    margin-bottom: 296px
+    margin-bottom: 324px
 
 .question__content-text
   max-width: 830px
@@ -87,7 +98,7 @@
   flex-direction: column
   padding: 12px 19px 19px 21px
   border-radius: 50%
-  background: #65C466
+  background-color: #65C466
 
   +max-w($desktop)
     padding: 9px 14px 12px 15px
@@ -167,6 +178,7 @@
   line-height: 1.2
 
   +max-w($desktop)
+    margin-bottom: 16px
     padding: 18px 10px 17px 20px
     font-size: 14px
 
@@ -196,27 +208,32 @@
   resize: none
 
   +max-w($desktop)
-    padding: 24px 10px 100px 20px
+    margin-bottom: 18px
+    padding: 24px 10px 83px 20px
     font-size: 14px
     line-height: 1.15
 
   +max-w($laptop)
     margin-bottom: 16px
-    padding: 19px 10px 80px 16px
+    padding: 19px 10px 65px 16px
     font-size: 11px  
   
   +max-w($tablet)
-    padding: 13px 10px 55px 14px
+    padding: 13px 10px 43px 14px
 
   +max-w($mobile)
-  padding: 10px 10px 66px 12px
+    margin-bottom: 28px
+    padding: 10px 10px 50px 12px
 
 .question__form-checkbox
   display: flex
-  margin-bottom: 35px
+  margin-bottom: 41px
+
+  +max-w($desktop)
+    margin-bottom: 27px
 
   +max-w($laptop)
-    margin-bottom: 20px
+    margin-bottom: 23px
 
   +max-w($tablet)
     max-width: 234px
@@ -285,7 +302,7 @@
   left: 4px
   border: 1px solid white
   border-radius: 4px
-  background: #65C466
+  background-color: #65C466
   height: 17px
   width: 17px
 
@@ -314,7 +331,7 @@
   border-radius: 7px
   box-shadow: 0px 5px 21px rgba(0, 0, 0, 0.25)
   color: #FFFFFF
-  background: #65C466
+  background-color: #65C466
   font-weight: $font-weight-semi-bold
   font-size: 19px
   line-height: 1.2
@@ -322,7 +339,7 @@
 
   &:hover
     color: #65C466
-    background: #FFFFFF
+    background-color: #FFFFFF
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
 
   +max-w($desktop)
@@ -337,8 +354,8 @@
 
   +max-w($tablet)
     position: absolute
-    bottom: 26px
-    right: 9px
+    right: 10px
+    bottom: 34px
     padding: 9px 21px
     font-size: 9px
 

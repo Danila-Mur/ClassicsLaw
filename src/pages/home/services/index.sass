@@ -1,6 +1,12 @@
 .services
   padding-bottom: 184px
 
+  +max-w($desktop)
+    padding-bottom: 64px
+
+  +max-w($laptop)
+    padding-bottom: 35px
+
 .services__header
   display: flex
   flex-direction: column
@@ -8,11 +14,33 @@
   align-items: center
   margin-bottom: 105px
 
+  +max-w($desktop)
+    margin-bottom: 121px
+
+  +max-w($laptop)
+    margin-bottom: 88px
+
+  +max-w($tablet)
+    margin-bottom: 72px
+
 .services__header-title
-  margin-bottom: 35px
+  margin-bottom: 39px
   color: $color-title
+  font-family: $font-family-third
   font-size: 49px
   line-height: 1.2
+
+  +max-w($desktop)
+    margin-bottom: 24px
+    font-size: 35px
+
+  +max-w($laptop)
+    font-size: 25px
+
+  +max-w($mobile)
+    margin-bottom: 18px
+    font-size: 22px
+    text-align: center
 
 .services__header-text
   padding: 0 144px
@@ -20,6 +48,21 @@
   font-size: 25px
   line-height: 1.2
   text-align: center
+
+  +max-w($desktop)
+    padding: 0 117px
+    font-size: 18px
+
+  +max-w($laptop)
+    padding: 0 154px
+    font-size: 13px
+
+  +max-w($tablet)
+    padding: 0 34px
+
+  +max-w($mobile)
+    padding: 0 4px
+    font-size: 13px
 
 .services__card
   // max-width: 392px
@@ -29,7 +72,6 @@
   display: flex
   flex-direction: column
   justify-content: flex-end
-  max-width: 392px
   min-height: 584px
   height: auto
   padding: 25px 7px 25px 12px
@@ -38,6 +80,15 @@
   &:hover
     transform: scale(1.1)
     transition: all 0.3s
+
+  +max-w($desktop)
+    min-height: 411px
+
+  +max-w($laptop)
+    min-height: 338px
+
+  +max-w($tablet)
+    min-height: 254px
 
 .services__card-title
   display: block
@@ -48,12 +99,30 @@
   font-weight: $font-weight-medium
   line-height: 1.2
 
+  +max-w($desktop)
+    font-size: 25px
+
+  +max-w($laptop)
+    font-size: 21px
+
+  +max-w($tablet)
+    font-size: 15px
+
 .services__card-text
   margin-bottom: 20px
   color: #fff
   font-family: $font-family-second
   font-size: 23px
   line-height: 1.2
+
+  +max-w($desktop)
+    font-size: 16px
+
+  +max-w($laptop)
+    font-size: 13px
+
+  +max-w($tablet)
+    font-size: 10px
 
 .services__card-link
   display: flex
@@ -62,6 +131,15 @@
   font-size: 21px
   line-height: 1.2
   text-decoration: none
+
+  +max-w($desktop)
+    font-size: 15px
+
+  +max-w($laptop) 
+    font-size: 12px
+
+  +max-w($tablet)
+    font-size: 9px
 
 .button__slider
   position: absolute
@@ -78,34 +156,59 @@
   left: 49px
   bottom: 183px
 
-.swiper-pagination 
-	position: absolute
-	top: 10px
-	right: 10px
-	width: auto !important
-	left: auto !important
-	margin: 0
-
-.swiper-pagination-bullet 
-	padding: 5px 10px
-	border-radius: 0
-	width: auto
-	height: 30px
-	text-align: center
-	line-height: 30px
-	font-size: 12px
-	color:#000
-	opacity: 1
-	background: rgba(0,0,0,0.2)
-
-.swiper-pagination-bullet-active 
-	color:#fff
-	background: #007aff
-
 .swiper-container
   position: relative
   justify-content: center
-  width: 1604px
+  max-width: 1400px
+  margin: 0 auto
 
-.swiper-wrapper
-  width: 1400px
+  +max-w($desktop)
+    max-width: 985px
+
+  +max-w($laptop)
+    max-width: 811px
+
+  +max-w($tablet)
+    max-width: 609px
+
+  +max-w($mobile)
+    max-width: 211px
+
+.swiper-pagination
+  display: flex 
+  justify-content: center
+  margin-top: 100px
+
+  +max-w($desktop)
+    margin-top: 70px
+
+  +max-w($laptop)
+    margin-top: 58px
+
+  +max-w($tablet)
+    margin-top: 42px
+
+.swiper-pagination-bullet
+  width: 82px
+  height: 10px
+  margin: 0 10px
+  background-color: #e8e2d5
+  border-radius: 5px
+  cursor: pointer
+
+  +max-w($desktop)
+    width: 58px
+    height: 7px
+
+  +max-w($laptop)
+    width: 47px
+    height: 6px
+
+  +max-w($tablet)
+    width: 36px
+    height: 5px
+
+.swiper-pagination-bullet-active 
+	color:#fff
+	background-color: #65C466
+  

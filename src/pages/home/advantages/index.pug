@@ -31,7 +31,9 @@ section.advantages
       each card in cards 
         .advantages__card 
           .advantages__card-wrap
-            img.advantages__card-img(src=`${card.img}`, alt="Advantages card")
+            .advantages__card-item
+              picture 
+                img.advantages__card-img(src=`${card.img}`, alt="Advantages card")
             span.advantages__card-title= card.title
           p.advantages__card-text= card.text
 

@@ -1,5 +1,18 @@
 .support
-  
+  padding-bottom: 80px
+
+  +max-w($desktop)
+    padding-bottom: 62px
+
+  +max-w($laptop)
+    padding-bottom: 50px
+
+  +max-w($tablet)
+    padding-bottom: 56px
+
+  +max-w($mobile)
+    padding-bottom: 29px
+
 .support__content
   position: relative
   padding: 44px 0 27px 48px
@@ -39,6 +52,7 @@
     width: 236px
 
 .support__card
+  position: relative
   max-width: 450px
   padding: 31px 0 28px 34px
   border-radius: 12px
@@ -53,11 +67,16 @@
     padding: 17px 0 14px 19px
 
   +max-w($tablet)
+    padding-bottom: 9px
     max-width: 272px
+
+  +max-w($mobile)
+    padding: 14px 0 14px 10px
 
 .support__card-title
   margin-bottom: 11px
   color: rgba(101, 196, 102, 0.7)
+  font-family: $font-family-third
   font-size: 28px
   line-height: 1.2
   text-transform: uppercase
@@ -66,6 +85,7 @@
     font-size: 20px
 
   +max-w($laptop)
+    margin-bottom: 7px
     font-size: 18px
 
 .support__card-text
@@ -76,13 +96,14 @@
 
   +max-w($desktop)
     max-width: 211px
+    margin-bottom: 11px
     font-size: 13px
 
   +max-w($laptop)
     font-size: 11px
 
 .support__card-button
-  padding: 12px 121px
+  padding: 12px 100px
   border: none
   border-radius: 6px
   box-shadow: 0px 5px 37px rgba(0, 0, 0, 0.25)

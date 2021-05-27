@@ -5,8 +5,8 @@ import "./index.sass";
 Swiper.use([Navigation, Pagination]);
 let menu = ["", "", "", "", "", ""];
 const swiper = new Swiper(".swiper-container", {
-  slidesPerView: 3,
-  spaceBetween: 60,
+  slidesPerView: 1,
+  spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -17,5 +17,11 @@ const swiper = new Swiper(".swiper-container", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+    420: {
+      slidesPerView: 3,
+      spaceBetween: 60
+    }
   }
 });

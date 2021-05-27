@@ -65,7 +65,7 @@ section.services
       p.services__header-text 
         | Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.
     // Slider main container
-    .swiper-container
+    .services__slider.swiper-container
       .swiper-wrapper
         each item in cards
           .swiper-slide.services__card(style=`background: ${item.gradient}, url('${item.image}') no-repeat center/cover;`)

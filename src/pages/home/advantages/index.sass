@@ -1,39 +1,107 @@
 .advantages
+  padding-top: 68px
+
+  +max-w($laptop)
+    padding-top: 28px
+
+  +max-w($tablet)
+    padding-top: 35px
   
 .advantages__header
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
-  margin-bottom: 116px
+  margin-bottom: 95px
+
+  +max-w($desktop)
+    margin-bottom: 66px
+
+  +max-w($laptop)
+    margin-bottom: 36px
 
 .advantages__header-title
-  margin-bottom: 13px
+  margin-bottom: 19px
   color: $color-title
-  font-size: 35px
+  font-family: $font-family-third
+  font-size: 49px
   line-height: 1.2
 
+  +max-w($desktop)
+    margin-bottom: 13px
+    font-size: 35px
+
+  +max-w($laptop)
+    margin-bottom: 11px
+    font-size: 25px
+
 .advantages__header-text
-  font-size: 18px
+  font-size: 25px
   line-height: 1.2
   color: #414141
 
+  +max-w($desktop)
+    font-size: 18px
+
+  +max-w($laptop)
+    font-size: 13px
+
 .advantages__cards
   display: grid
-  grid-template-columns: repeat(4, 383px)
-  column-gap: 42px
+  grid-template-columns: repeat(auto-fill, 383px)
+  gap: 42px 
+
+  +max-w($desktop)
+    grid-template-columns: repeat(auto-fill,270px )
+    gap: 30px
+
+  +max-w($laptop)
+    grid-template-columns: repeat(auto-fill, 187px)
+    gap: 21px
+    max-width: 811px
+    margin: 0 auto
+
+  +max-w($tablet)
+    grid-template-columns: repeat(auto-fill,245px)
+    justify-content: center
+    gap: 16px 29px 
 
 .advantages__card
-  padding: 0px 18px 19px 20px
-  border: 1.42138px solid #C2C1C2
+  padding: 30px 18px 45px 20px
+  border: 1px solid #C2C1C2
   border-radius: 10px
-  background: #FFFFFF
+  background-color: #FFFFFF
   box-shadow: 0px 0px 20px #DEDEDE
+
+  +max-w($desktop)
+    padding: 21px 18px 13px 21px
 
 .advantages__card-wrap
   display: flex
   align-items: center
   margin-bottom: 29px
+
+  +max-w($laptop)
+    margin-bottom: 18px
+
+.advantages__card-item
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 83px
+  height: 83px
+  margin-right: 16px
+  border-radius: 50%
+  background-color: #FFFFFF
+  box-shadow: 0px 0px 28px #DEDEDE
+
+  +max-w($desktop)
+    width: 59px
+    height: 59px
+
+  +max-w($laptop)
+    width: 40px
+    height: 40px
 
 .advantages__card-title
   color: #696969
@@ -41,7 +109,19 @@
   font-weight: $font-weight-semi-bold
   line-height: 1.2
 
+  +max-w($desktop)
+    font-size: 16px
+
+  +max-w($laptop)
+    font-size: 11px
+
 .advantages__card-text
   color: #9D9D9D
   font-size: 19px
   line-height: 1.2
+
+  +max-w($desktop)
+    font-size: 14px
+
+  +max-w($laptop)
+    font-size: 9px
