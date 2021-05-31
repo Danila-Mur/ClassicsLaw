@@ -1,9 +1,8 @@
-import './404';
-import initHome from './home';
-import initExample from './example'; // need remove;
+import "./404";
+import initHome from "./home";
+import initAboutCompany from "./about-company";
 
 export default () => {
-  console.log('init pages');
   initHome();
-  initExample();
+  initAboutCompany();
 };

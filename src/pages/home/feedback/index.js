@@ -3,15 +3,17 @@ import "swiper/swiper.min.css";
 import "./index.sass";
 
 Swiper.use([Navigation, Pagination]);
-let menu = ["", "", "", "", "", ""];
-const sercicesSwiper = new Swiper(".services__slider", {
+let feedbackMenu = ["", "", "", "", "", ""];
+const swiper = new Swiper(".feedback__slider", {
   slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".feedback__pagination",
     clickable: true,
     renderBullet: function(index, className) {
-      return '<span class="' + className + '">' + menu[index] + "</span>";
+      return (
+        '<span class="' + className + '">' + feedbackMenu[index] + "</span>"
+      );
     }
   },
   navigation: {
@@ -19,13 +21,17 @@ const sercicesSwiper = new Swiper(".services__slider", {
     prevEl: ".swiper-button-prev"
   },
   breakpoints: {
-    420: {
+    769: {
       slidesPerView: 2,
-      spaceBetween: 60
+      spaceBetween: 20
     },
-    767: {
-      slidesPerView: 3,
-      spaceBetween: 60
+    1025: {
+      slidesPerView: 2,
+      spaceBetween: 28
+    },
+    1337: {
+      slidesPerView: 2,
+      spaceBetween: 40
     }
   }
 });

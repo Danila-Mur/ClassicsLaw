@@ -26,7 +26,7 @@ const PugHtmlPreprocessor = require("./pug-html-preprocessor");
  */
 const IS_PRODUCTION = process.env.NODE_ENV === "production";
 const SERVER_HOST = "localhost";
-const SERVER_PORT = 3001;
+const SERVER_PORT = 3000;
 
 /**
  * Webpack config variables

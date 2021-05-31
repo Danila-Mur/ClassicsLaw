@@ -1,0 +1,87 @@
+-
+  var feedbackCards = [
+    {
+      stars: 'images/star.svg',
+      description: 'В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей ',
+      avatar: 'images/avatar.jpg',
+      avatarDesktop: 'images/avatar-desktop.jpg', 
+      avatarLaptop: 'images/avatar-laptop.jpg',
+      name: 'Алексей.К.В',
+      company: 'ООО “Энергон”'
+    },
+    {
+      stars: 'images/star.svg',
+      description: 'В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей ',
+      avatar: 'images/avatar.jpg',
+      avatarDesktop: 'images/avatar-desktop.jpg', 
+      avatarLaptop: 'images/avatar-laptop.jpg',
+      name: 'Алексей.К.В',
+      company: 'ООО “Энергон”'
+    },
+    {
+      stars: 'images/star.svg',
+      description: 'В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей ',
+      avatar: 'images/avatar.jpg',
+      avatarDesktop: 'images/avatar-desktop.jpg', 
+      avatarLaptop: 'images/avatar-laptop.jpg',
+      name: 'Алексей.К.В',
+      company: 'ООО “Энергон”'
+    },
+    {
+      stars: 'images/star.svg',
+      description: 'В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей ',
+      avatar: 'images/avatar.jpg',
+      avatarDesktop: 'images/avatar-desktop.jpg', 
+      avatarLaptop: 'images/avatar-laptop.jpg',
+      name: 'Алексей.К.В',
+      company: 'ООО “Энергон”'
+    },
+    {
+      stars: 'images/star.svg',
+      description: 'В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей ',
+      avatar: 'images/avatar.jpg',
+      avatarDesktop: 'images/avatar-desktop.jpg', 
+      avatarLaptop: 'images/avatar-laptop.jpg',
+      name: 'Алексей.К.В',
+      company: 'ООО “Энергон”'
+    },
+    {
+      stars: 'images/star.svg',
+      description: 'В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей ',
+      avatar: 'images/avatar.jpg',
+      avatarDesktop: 'images/avatar-desktop.jpg', 
+      avatarLaptop: 'images/avatar-laptop.jpg',
+      name: 'Алексей.К.В',
+      company: 'ООО “Энергон”'
+    },
+  ]
+
+section.feedback
+  .container
+    .feedback__header 
+      h2.feedback__header-title Отзывы
+      p.feedback__header-text 
+        | За долгое время работы, мы собрали десятки отзывов, которые помогут свормировать мнение о нашей работе 
+    // Slider main container
+    .feedback__slider.feedback__swiper-container.swiper-container
+      .swiper-wrapper
+        each item in feedbackCards
+          .swiper-slide.feedback__card
+            .feedback__stars
+              each star in [1,2,3,4,5]
+                img.feedback__star(src=`${item.stars}`, alt="Stars") 
+            p.feedback__description= item.description
+            .feedback__card-wrappper
+              picture 
+                source(srcset=`${item.avatarLaptop}`, media="(max-width: 1024px)")
+                source(srcset=`${item.avatarDesktop}`, media="(max-width: 1500px)")
+                img.feedback__avatar(src=`${item.avatar}`, alt="Avatar")
+              .feedback__wrapp 
+                span.feedback__wrapp-name= item.name
+                span.feedback__wrapp-company= item.company
+      .swiper-button-prev.button__slider
+        img.button__slider-img(src="images/arrow-left-feedback.svg", alt="Arrow left")
+      .swiper-button-next.button__slider
+        img.button__slider-img(src="images/arrow-right-feedback.svg", alt="Arrow right")
+      .swiper-pagination.feedback__pagination
+              

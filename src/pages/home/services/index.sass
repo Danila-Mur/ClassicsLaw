@@ -1,5 +1,5 @@
 .services
-  padding-bottom: 184px
+  padding-bottom: 114px
 
   +max-w($desktop)
     padding-bottom: 64px
@@ -12,7 +12,7 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  margin-bottom: 105px
+  margin-bottom: 175px
 
   +max-w($desktop)
     margin-bottom: 121px
@@ -156,23 +156,11 @@
   left: 49px
   bottom: 183px
 
-.swiper-container
+.services__container
   position: relative
   justify-content: center
-  max-width: 1400px
-  margin: 0 auto
-
-  +max-w($desktop)
-    max-width: 985px
-
-  +max-w($laptop)
-    max-width: 811px
-
-  +max-w($tablet)
-    max-width: 609px
-
-  +max-w($mobile)
-    max-width: 211px
+  max-width: 1604px
+  padding: 0 97px
 
 .swiper-pagination
   display: flex 
@@ -187,6 +175,9 @@
 
   +max-w($tablet)
     margin-top: 42px
+
+  +max-w($mobile)
+    justify-content: center
 
 .swiper-pagination-bullet
   width: 82px
@@ -208,7 +199,11 @@
     width: 36px
     height: 5px
 
+  +max-w($mobile)
+    width: 27px
+    height: 3px
+    margin: 0 3px
+
 .swiper-pagination-bullet-active 
 	color:#fff
 	background-color: #65C466
-  

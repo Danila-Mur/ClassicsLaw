@@ -65,16 +65,17 @@ section.services
       p.services__header-text 
         | Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.
     // Slider main container
-    .services__slider.swiper-container
-      .swiper-wrapper
-        each item in cards
-          .swiper-slide.services__card(style=`background: ${item.gradient}, url('${item.image}') no-repeat center/cover;`)
-            span.services__card-title= item.title
-            p.services__card-text= item.text 
-            a.services__card-link(href="#")= item.link 
-      .swiper-button-prev.button__slider
-        img.button__slider-img(src="images/arrow-left.svg", alt="Arrow left")
-      .swiper-button-next.button__slider
-        img.button__slider-img(src="images/arrow-right.svg", alt="Arrow right")
-      .swiper-pagination
+    .services__container
+      .services__slider.services__swiper-container.swiper-container
+        .swiper-wrapper
+          each item in cards
+            .swiper-slide.services__card(style=`background: ${item.gradient}, url('${item.image}') no-repeat center/cover;`)
+              span.services__card-title= item.title
+              p.services__card-text= item.text 
+              a.services__card-link(href="#")= item.link 
+        .swiper-button-prev.button__slider
+          img.button__slider-img(src="images/arrow-left.svg", alt="Arrow left")
+        .swiper-button-next.button__slider
+          img.button__slider-img(src="images/arrow-right.svg", alt="Arrow right")
+        .swiper-pagination
         

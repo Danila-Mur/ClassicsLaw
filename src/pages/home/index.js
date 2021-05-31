@@ -6,5 +6,6 @@ import "./support";
 import "./services";
 import "./advantages";
 import "./help";
+import "./feedback";
 
 export default () => {};

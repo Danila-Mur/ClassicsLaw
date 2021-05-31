@@ -1,4 +1,4 @@
-const pug = require('pug');
+const pug = require("pug");
 
 module.exports = ({ basedir, locals }) => {
   const files = {};
@@ -7,13 +7,14 @@ module.exports = ({ basedir, locals }) => {
     let result;
     try {
       const render = pug.compile(content, {
-        doctype: 'html',
+        doctype: "html",
         basedir,
-        pretty: '    ',
-        inlineRuntimeFunctions: false,
+        pretty: "    ",
+        inlineRuntimeFunctions: false
       });
+      render.dependencies.forEach(loaderContext.addDependency);
       result = render({
-        require: (pathRequire) => {
+        require: pathRequire => {
           if (!files[pathRequire]) {
             files[pathRequire] = new Promise((resolve, reject) => {
               loaderContext.resolve(
@@ -33,30 +34,33 @@ module.exports = ({ basedir, locals }) => {
                           if (match) {
                             const [_, _public, src] = match;
                             // eslint-disable-next-line no-underscore-dangle
-                            const prefix = _public ? loaderContext._compiler.options.output.publicPath : '';
+                            const prefix = _public
+                              ? loaderContext._compiler.options.output
+                                  .publicPath
+                              : "";
                             resolve(prefix + src);
                           } else {
-                            reject(new Error('not found src'));
+                            reject(new Error("not found src"));
                           }
                         }
-                      },
+                      }
                     );
                   }
-                },
+                }
               );
             });
           }
           return pathRequire;
         },
-        ...locals,
+        ...locals
       });
       const fileResources = await Promise.all(
-        Object
-          .entries(files)
-          .map(([key, promise]) => promise.then((value) => [key, value])),
+        Object.entries(files).map(([key, promise]) =>
+          promise.then(value => [key, value])
+        )
       );
       fileResources.forEach(([key, value]) => {
-        result = result.replace(new RegExp(key, 'ig'), value);
+        result = result.replace(new RegExp(key, "ig"), value);
       });
     } catch (error) {
       loaderContext.emitError(error);
