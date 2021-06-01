@@ -19,7 +19,7 @@ const sercicesSwiper = new Swiper(".services__slider", {
     prevEl: ".swiper-button-prev"
   },
   breakpoints: {
-    420: {
+    551: {
       slidesPerView: 2,
       spaceBetween: 60
     },

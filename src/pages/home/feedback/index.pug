@@ -63,25 +63,31 @@ section.feedback
       p.feedback__header-text 
         | За долгое время работы, мы собрали десятки отзывов, которые помогут свормировать мнение о нашей работе 
     // Slider main container
-    .feedback__slider.feedback__swiper-container.swiper-container
-      .swiper-wrapper
-        each item in feedbackCards
-          .swiper-slide.feedback__card
-            .feedback__stars
-              each star in [1,2,3,4,5]
-                img.feedback__star(src=`${item.stars}`, alt="Stars") 
-            p.feedback__description= item.description
-            .feedback__card-wrappper
-              picture 
-                source(srcset=`${item.avatarLaptop}`, media="(max-width: 1024px)")
-                source(srcset=`${item.avatarDesktop}`, media="(max-width: 1500px)")
-                img.feedback__avatar(src=`${item.avatar}`, alt="Avatar")
-              .feedback__wrapp 
-                span.feedback__wrapp-name= item.name
-                span.feedback__wrapp-company= item.company
-      .swiper-button-prev.button__slider
-        img.button__slider-img(src="images/arrow-left-feedback.svg", alt="Arrow left")
-      .swiper-button-next.button__slider
-        img.button__slider-img(src="images/arrow-right-feedback.svg", alt="Arrow right")
-      .swiper-pagination.feedback__pagination
+    .feedback__container
+      .feedback__slider.feedback__swiper-container.swiper-container
+        .swiper-wrapper
+          each item in feedbackCards
+            .swiper-slide.feedback__card
+              .feedback__stars
+                each star in [1,2,3,4,5]
+                  img.feedback__star(src=`${item.stars}`, alt="Stars") 
+              p.feedback__description= item.description
+              .feedback__card-wrappper
+                picture 
+                  source(srcset=`${item.avatarLaptop}`, media="(max-width: 1024px)")
+                  source(srcset=`${item.avatarDesktop}`, media="(max-width: 1500px)")
+                  img.feedback__avatar(src=`${item.avatar}`, alt="Avatar")
+                .feedback__wrapp 
+                  span.feedback__wrapp-name= item.name
+                  span.feedback__wrapp-company= item.company
+        .swiper-pagination.feedback__pagination
+      .swiper-button-prev.swiper-button-prev--feedback.button__slider
+        picture 
+          source(srcset="images/arrow-left.svg", media="(max-width: 420px)")
+          img.button__slider-img(src="images/arrow-left-feedback.svg", alt="Arrow left")
+      .swiper-button-next.swiper-button-next--feedback.button__slider
+        picture 
+          source(srcset="images/arrow-right.svg", media="(max-width: 420px)")
+          img.button__slider-img(src="images/arrow-right-feedback.svg", alt="Arrow right")
+
               

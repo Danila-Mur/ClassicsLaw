@@ -58,6 +58,11 @@
   +max-w($laptop)
     font-size: 13px
 
+.feedback__container
+  position: relative
+  justify-content: center
+  max-width: 1687px
+
 .feedback__card
   padding: 39px 180px 52px 78px
   border-radius: 14px
@@ -159,8 +164,36 @@
   +max-w($laptop)
     font-size: 9px
 
-.feedback__swiper-container
-  max-width: 1665px
+
+
+.swiper-button-next--feedback
+  right: -20px
+  bottom: 50%
+
+  +max-w($desktop)
+    right: -15px
+    width: 30px
 
   +max-w($laptop)
-    max-width: 813px
+    right: -10px
+    width: 21px
+  
+  +max-w(420)
+    bottom: -42px
+    right: 151px
+
+.swiper-button-prev--feedback
+  bottom: 50%
+  left: -20px
+
+  +max-w($desktop)
+    left: -15px
+    width: 30px
+
+  +max-w($laptop)
+    left: -10px
+    width: 21px
+
+  +max-w(420)
+    left: 151px
+    bottom: -42px

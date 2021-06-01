@@ -148,19 +148,58 @@
   z-index: 10
   cursor: pointer
 
-.swiper-button-next
-  right: 111px
-  bottom: 183px
+.swiper-button-next--services
+  right: -24px
+  bottom: 50%
 
-.swiper-button-prev
-  left: 49px
-  bottom: 183px
+  +max-w($desktop)
+    right: 28px
+    width: 40px
+
+  +max-w($laptop)
+    right: 45px
+    width: 33px
+
+  +max-w($tablet)
+    right: 5px
+    width: 25px
+
+  +max-w(420)
+    right: 95px
+    bottom: -53px
+
+
+.swiper-button-prev--services
+  left: -12px
+  bottom: 50%
+
+  +max-w($desktop)
+    left: 28px
+    width: 40px
+
+  +max-w($laptop)
+    left: 45px
+    width: 33px
+
+  +max-w($tablet)
+    left: 5px
+    width: 25px
+
+  +max-w(420)
+    left: 95px
+    bottom: -53px
 
 .services__container
   position: relative
   justify-content: center
   max-width: 1604px
   padding: 0 97px
+
+  +max-w($tablet)
+    padding: 0 50px
+
+  +max-w(420)
+    padding: 0 20px
 
 .swiper-pagination
   display: flex 
