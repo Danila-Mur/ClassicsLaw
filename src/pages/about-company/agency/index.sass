@@ -1,0 +1,226 @@
+.agency 
+  padding-bottom: 51px
+
+.agency__header
+  margin-bottom: 94px
+  text-align: center
+
+  +max-w($desktop)
+    margin-bottom: 66px
+
+  +max-w($laptop)
+    margin-bottom: 54px
+
+  +max-w($tablet)
+    margin-bottom: 40px
+
+.agency__header-title
+  margin-bottom: 38px
+  color: #414141
+  font-weight: $font-weight-bold
+  font-size: 51px
+  line-height: 1.2
+
+  +max-w($desktop)
+    margin-bottom: 27px
+    font-size: 36px
+
+  +max-w($laptop)
+    margin-bottom: 22px
+    font-size: 29px
+  
+  +max-w($tablet)
+    margin-bottom: 16px
+    font-size: 26px
+  
+  +max-w(650)
+    margin-bottom: 20px
+
+.agency__header-text
+  padding: 0 92px
+  color: #414141
+  font-size: 28px
+  line-height: 1.2
+
+  +max-w($desktop)
+    padding: 0 62px
+    font-size: 20px
+
+  +max-w($laptop)
+    font-size: 16px
+
+  +max-w($tablet)
+    font-size: 13px
+
+  +max-w(650)
+    padding: 0
+
+.agency__cards
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  gap: 51px 42px 
+
+  +max-w($desktop)
+    gap: 36px 30px
+
+  +max-w($laptop)
+    gap: 29px 24px
+
+  +max-w(991)
+    grid-template-columns: repeat(3, 1fr )
+
+  +max-w(650)
+    grid-template-columns: 1fr
+    padding: 0 27px
+
+.agency__card 
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 41px 27px 18px 28px
+  border-radius: 14px
+  background: #FFFFFF
+  box-shadow: 0px 0px 42px rgba(0, 0, 0, 0.2)
+
+  &:hover
+    background: #FFFFFF
+    box-shadow: 0px 0px 42px rgba(101, 196, 102, 0.5)
+    border-radius: 14px
+
+  +max-w($desktop)
+    padding: 29px 19px 13px 20px
+
+  +max-w(650)
+    min-height: 295px
+    padding: 23px 15px 40px 16px
+
+.agency__card-img
+  margin-bottom: 32px
+  padding: 8px
+  border: 8px solid #65C466
+  border-radius: 50%
+
+  +max-w($desktop)
+    width: 156px
+    margin-bottom: 23px
+    padding: 5px
+    border-width: 6px
+
+  +max-w($laptop)
+    width: 127px
+    margin-bottom: 18px
+    padding: 4px
+    border-width: 5px
+
+.agency__card-title
+  margin-bottom: 25px
+  color: #65C466
+  font-weight: $font-weight-semi-bold
+  font-size: 31px
+  line-height: 1.2
+  text-align: center
+
+  +max-w($desktop)
+    margin-bottom: 18px
+    font-size: 22px
+
+  +max-w($laptop)
+    margin-bottom: 14px
+    font-size: 18px
+
+.agency__card-text
+  color: #414141
+  font-size: 19px
+  line-height: 1.25
+  text-align: center
+
+  +max-w($desktop)
+    font-size: 14px
+
+  +max-w($laptop)
+    font-size: 11px
+
+.agency__wrapper
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  max-width: 934px
+  margin-left: auto
+
+  +max-w($desktop)
+    max-width: 655px
+
+  +max-w($laptop)
+    max-width: 536px
+
+  +max-w($tablet)
+    max-width: 401px
+
+  +max-w(650)
+    justify-content: center
+    max-width: unset
+
+.agency__pagination
+  display: flex
+  justify-content: center
+  margin-top: 126px
+
+  +max-w($desktop)
+    margin-top: 89px
+
+  +max-w($laptop)
+    margin-top: 72px
+
+  +max-w($tablet)
+    margin-top: 50px
+
+.agency__pagination-bullet
+  width: 26px
+  height: 26px
+  margin: 0 6px
+  border: 3px solid #65C466
+  border-radius: 50%
+  cursor: pointer
+  
+  &--active
+    background-color: #65c466
+  
+  +max-w($desktop)
+    width: 18px
+    height: 18px
+
+  +max-w($laptop)
+    width: 15px
+    height: 15px
+    border-width: 2px
+
+  +max-w($tablet)
+    width: 13px
+    height: 13px
+
+  +max-w(650)
+    display: none
+
+.agency__link
+  font-size: 36px
+  line-height: 1.2
+  color: #65C466
+
+  +max-w($desktop)
+    font-size: 25px
+
+  +max-w($laptop)
+    font-size: 20px
+
+  +max-w($tablet)
+    font-size: 16px
+
+  +max-w(650)
+    display: none
+
+.agency__link--mobile
+  display: none
+
+  +max-w(650)
+    display: flex
+    justify-content: center
