@@ -1,8 +1,8 @@
 import "./404";
 import initHome from "./home";
-import initAboutCompany from "./about-company";
+import initFeedback from "./feedback";
 
 export default () => {
   initHome();
-  initAboutCompany();
+  initFeedback();
 };

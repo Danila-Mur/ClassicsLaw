@@ -1,5 +1,6 @@
-import './block-example';
+import "./block-example";
+import "./heading";
 
 export default () => {
-  console.log('init blocks');
+  console.log("init blocks");
 };

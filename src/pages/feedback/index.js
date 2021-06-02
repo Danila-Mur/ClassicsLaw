@@ -1,7 +1,7 @@
 import "./index.sass";
-import "./aboutcompany.pug";
+import "./feedback.pug";
 
-import "./heading";
+// import "./heading";
 import "./reviews";
 
 export default () => {};

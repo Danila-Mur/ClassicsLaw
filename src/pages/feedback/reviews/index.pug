@@ -1,0 +1,76 @@
+-
+  var reviewsCards = [
+    {
+      name: 'Антон Казанов',
+      post: 'Консультация автоюриста ',
+      text: 'Очень довольны компетентным и профессиональным персоналом Вашей фирмы, который занимается отгрузкой необходимой нам продукции всегда быстро и оперативно.Желаем производственных успехов, экономического и финансового благополучия,',
+      avatar: 'images/reviews-card-1.jpg',
+      line: 'images/reviews-line.svg',
+    },
+    {
+      name: 'Виктория Тручкова',
+      post: 'Консультация по недвижимости ',
+      text: 'Мы очень благодарны, в дальнейшем с  расширением склада,мы обязательно обратимся  в Вашу компанию',
+      avatar: 'images/reviews-card-2.jpg',
+      line: 'images/reviews-line.svg',
+    },
+    {
+      name: 'Светлана Ильиных',
+      post: 'Консультация по бракоразводному процессу',
+      text: 'Работать с компанией "Классика права" понравилось. Особенно хочется отметить работу менеджера Коноровой Татьяны, которая в процессе сотрудничества компетентно решала поставленные задачи.',
+      avatar: 'images/reviews-card-3.jpg',
+      line: 'images/reviews-line.svg',
+    },
+    {
+      name: 'Антон Казанов',
+      post: 'Консультация автоюриста ',
+      text: 'Очень довольны компетентным и профессиональным персоналом Вашей фирмы, который занимается отгрузкой необходимой нам продукции всегда быстро и оперативно.Желаем производственных успехов, экономического и финансового благополучия,',
+      avatar: 'images/reviews-card-1.jpg',
+      line: 'images/reviews-line.svg',
+    },
+    {
+      name: 'Виктория Тручкова',
+      post: 'Консультация по недвижимости ',
+      text: 'Мы очень благодарны, в дальнейшем с  расширением склада,мы обязательно обратимся  в Вашу компанию',
+      avatar: 'images/reviews-card-2.jpg',
+      line: 'images/reviews-line.svg',
+    },
+    {
+      name: 'Светлана Ильиных',
+      post: 'Консультация по бракоразводному процессу',
+      text: 'Работать с компанией "Классика права" понравилось. Особенно хочется отметить работу менеджера Коноровой Татьяны, которая в процессе сотрудничества компетентно решала поставленные задачи.',
+      avatar: 'images/reviews-card-3.jpg',
+      line: 'images/reviews-line.svg',
+    },
+  ]
+
+section.reviews 
+  .container
+    .reviews__header 
+      h2.reviews__header-title Отзывы и оценки наших клиентов 
+      span.reviews__header-description Вы можете оставить отзывы о нашей компании
+    .reviews__container
+      .reviews__cards.reviews-swiper.swiper-container
+        .swiper-wrapper
+          each item in reviewsCards
+            .swiper-slide.reviews__card
+              .reviews__card-inner
+                img.reviews__card-avatar(src=`${item.avatar}`, alt="Avatar")
+                .reviews__card-wrapper
+                  span.reviews__card-name= item.name
+                  span.reviews__card-post= item.post
+              img.reviews__card-line(src=`${item.line}`, alt="Line")
+              p.reviews__card-text= item.text
+        .swiper-pagination--reviews
+      .swiper-button-prev.swiper-button-prev--reviews.button__slider
+        picture 
+          source(srcset="images/reviews-arrow-left-laptop.svg", media="(max-width: 1024px")
+          source(srcset="images/reviews-arrow-left-desktop.svg", media="(max-width: 1500px)")
+          img.button__slider-img(src="images/reviews-arrow-left.svg", alt="Arrow left")
+      .swiper-button-next.swiper-button-next--reviews.button__slider
+        picture 
+          source(srcset="images/reviews-arrow-right-laptop.svg", media="(max-width: 1024px")
+          source(srcset="images/reviews-arrow-right-desktop.svg", media="(max-width: 1500px)")
+          img.button__slider-img(src="images/reviews-arrow-right.svg", alt="Arrow right")
+
+
