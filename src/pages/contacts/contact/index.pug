@@ -1,0 +1,18 @@
+section.contact
+  .container 
+    .contact__inner 
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A31e668bc83ad95ac2d387c3bd5130455717a9b569f401a0d75bc8e27ff818aa6&amp;source=constructor" width="801" height="798" frameborder="0" class="contact__map"></iframe>
+      form.contact__form(action="#") 
+        p.contact__form-description 
+          | Вы можете воспользоваться контактной формой для связи. Заполните форму, отправьте информацию и с Вами свяжется опытный юрист. который ответит на вопросы. 
+        label.contact__form-label Ваш вопрос 
+          textarea.contact__form-textarea(name="Text", placeholder="Текст:") 
+        .contact__form-wrapper 
+          label.contact__form-label Ваш имя
+            input.contact__form-input(type="text", placeholder="Имя")
+          label.contact__form-label Контактный телефон
+            input.contact__form-input(type="tel", placeholder="Телефон")
+          label.contact__form-label E-mail
+            input.contact__form-input(type="email", placeholder="Почта ")
+          button.contact__form-button(type="submit") Задать вопрос
+          
