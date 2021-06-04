@@ -1,0 +1,68 @@
+-
+  var serviceCards = [
+    {
+      image: 'images/service-card-1.jpg',
+      title: 'Автоюрист',
+      text: 'Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.'
+    },
+    {
+      image: 'images/service-card-2.jpg',
+      title: 'Банкротство',
+      text: 'Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей'
+    },
+    {
+      image: 'images/service-card-3.jpg',
+      title: 'Бизнес юрист',
+      text: 'Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.'
+    },
+    {
+      image: 'images/service-card-4.jpg',
+      title: 'Жилищные споры',
+      text: 'Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей'
+    },
+    {
+      image: 'images/service-card-5.jpg',
+      title: 'Защита прав потребителя',
+      text: 'Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей'
+    },
+    {
+      image: 'images/service-card-6.jpg',
+      title: 'Земельные споры',
+      text: 'Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей'
+    },
+    {
+      image: 'images/service-card-7.jpg',
+      title: 'Консультация юриста',
+      text: 'Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.'
+    },
+    {
+      image: 'images/service-card-8.jpg',
+      title: 'Кредитные споры',
+      text: 'Задача организации, в особенности же рамки и место обучения кадров позволяет оценить значение соответствующий условий активизации.'
+    },
+  ]
+
+section.service
+  .container 
+    .service__wrapper 
+      include /blocks/service-list/index
+      .service__content 
+        h2.service__title Юридические услуги в Красноярске
+        p.service__text 
+          | Юридические услуги для физических и юридических лиц в Красноярске. Любая тематика от земельного права до банкротства
+        .service__cards 
+          each card in serviceCards
+            .service__card 
+              img.service__card-img(src=`${card.image}`, alt="Card image")
+              .service__card-wrapper
+                span.service__card-title= card.title 
+                p.service__card-text= card.text
+        .wrapper__pageination
+          .pagination 
+            span.pagination-bullet
+            span.pagination-bullet.pagination-bullet--active
+            span.pagination-bullet
+            span.pagination-bullet
+            span.pagination-bullet
+          a.link(href="#") Следующая 
+          a.link.link--mobile(href="#") Показать больше

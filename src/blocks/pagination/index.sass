@@ -1,0 +1,84 @@
+.wrapper__pageination
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  max-width: 934px
+  margin-left: auto
+
+  +max-w($desktop)
+    max-width: 655px
+
+  +max-w($laptop)
+    max-width: 536px
+
+  +max-w($tablet)
+    max-width: 401px
+
+  +max-w(650)
+    justify-content: center
+    max-width: unset
+
+.pagination
+  display: flex
+  justify-content: center
+  margin-top: 126px
+
+  +max-w($desktop)
+    margin-top: 89px
+
+  +max-w($laptop)
+    margin-top: 72px
+
+  +max-w($tablet)
+    margin-top: 50px
+
+.pagination-bullet
+  width: 26px
+  height: 26px
+  margin: 0 6px
+  border: 3px solid #65C466
+  border-radius: 50%
+  cursor: pointer
+  
+  &--active
+    background-color: #65c466
+  
+  +max-w($desktop)
+    width: 18px
+    height: 18px
+
+  +max-w($laptop)
+    width: 15px
+    height: 15px
+    border-width: 2px
+
+  +max-w($tablet)
+    width: 13px
+    height: 13px
+
+  +max-w(650)
+    display: none
+
+.link
+  font-size: 36px
+  line-height: 1.2
+  color: #65C466
+
+  +max-w($desktop)
+    font-size: 25px
+
+  +max-w($laptop)
+    font-size: 20px
+
+  +max-w($tablet)
+    font-size: 16px
+
+  +max-w(650)
+    display: none
+
+.link--mobile
+  display: none
+
+  +max-w(650)
+    display: flex
+    justify-content: center

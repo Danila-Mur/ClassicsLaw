@@ -1,6 +1,4 @@
-import "./catalog.pug";
 import "./index.sass";
-
-import "./service";
+import "./сarlawyer.pug";
 
 export default () => {};

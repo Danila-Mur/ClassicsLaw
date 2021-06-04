@@ -1,0 +1,152 @@
+.service
+  padding-bottom: 69px
+
+.service__wrapper
+  display: flex
+  justify-content: space-between
+
+.service__content 
+  max-width: 1236px
+
+  +max-w($laptop)
+    margin-top: -85px
+
+  +max-w(650)
+    margin-top: -25px
+
+.service__title
+  margin-bottom: 25px
+  color: #414141
+  font-size: 51px
+  line-height: 1.2
+  font-weight: $font-weight-bold
+
+  +max-w($desktop)
+    margin-bottom: 18px 
+    font-size: 36px
+
+  +max-w($laptop) 
+    margin-bottom: 13px
+    font-size: 26px
+
+  +max-w($tablet)
+    margin-bottom: 10px
+    font-size: 20px
+
+  +max-w(650)
+    margin-bottom: 4px
+    font-size: 15px
+
+.service__text
+  max-width: 812px
+  margin-right: auto
+  margin-bottom: 57px
+  color: #414141
+  font-size: 25px
+  line-height: 1.2
+
+  +max-w($desktop)
+    margin-bottom: 40px
+    font-size: 18px
+
+  +max-w($laptop)
+    max-width: 594px
+    margin-bottom: 30px
+    font-size: 13px
+
+  +max-w($tablet)
+    max-width: 450px
+    margin-bottom: 22px
+    font-size: 10px
+
+  +max-w(650)
+    max-width: 237px
+    margin-bottom: 19px
+    font-size: 9px
+
+.service__cards 
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 70px
+
+  +max-w($desktop)
+    gap: 50px
+    max-width: 850px
+
+  +max-w($laptop)
+    gap: 37px
+    max-width: 636px
+
+  +max-w($tablet)
+    gap: 28px
+    max-width: 481px
+
+  +max-w(650)
+    grid-template-columns: 1fr
+
+.service__card
+  display: flex
+  border: 2px solid #C6CAD3
+  border-radius: 14px
+  background-color: #FFFFFF
+
+  +max-w($desktop)
+    border-radius: 10px
+
+.service__card-img
+  border-radius: 11px 0px 0px 11px
+
+  +max-w($desktop)
+    width: 146px
+
+  +max-w($laptop)
+    width: 109px
+
+  +max-w($tablet)
+    width: 82px
+
+.service__card-wrapper
+  padding: 26px 17px 18px 24px
+
+  +max-w($desktop)
+    padding: 18px 12px 13px 17px
+
+  +max-w($laptop)
+    padding: 13px 8px 9px 12px
+
+  +max-w($tablet)
+    padding: 10px 6px 7px 9px
+
+.service__card-title
+  display: block
+  margin-bottom: 12px
+  color: #414141
+  font-size: 28px
+  line-height: 1.25
+  font-weight: $font-weight-semi-bold
+
+  +max-w($desktop)
+    margin-bottom: 9px
+    font-size: 20px
+
+  +max-w($laptop)
+    margin-bottom: 6px
+    font-size: 14px
+
+  +max-w($tablet)
+    margin-bottom: 5px
+    font-size: 11px
+
+.service__card-text
+  color: #A3A3A3
+  font-size: 18px
+  line-height: 1.2
+
+  +max-w($desktop)
+    font-size: 13px
+
+  +max-w($laptop)
+    font-size: 9px
+
+  +max-w($tablet)
+    font-size: 7px

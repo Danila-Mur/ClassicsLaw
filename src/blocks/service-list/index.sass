@@ -1,0 +1,69 @@
+.service__list
+  max-width: 383px
+  padding-top: 40px
+
+  +max-w($desktop)
+    max-width: 270px
+    padding-top: 28px
+
+  +max-w($laptop)
+    max-width: 261px
+    padding-top: 0
+
+  +max-w($tablet)
+    max-width: 194px
+
+  +max-w(650)
+    display: none
+
+.service__item
+  border-bottom: 1px solid #C6CAD3
+
+  &:first-child
+    border-top: 1px solid #C6CAD3
+
+.service__list-text
+  margin-top: 35px
+  color: #888D97
+  font-weight: $font-weight-semi-bold
+  font-size: 18px
+  line-height: 1.2
+
+  +max-w($desktop)
+    margin-top: 25px
+    font-size: 13px
+
+  +max-w($laptop)
+    margin-top: 24px
+    font-size: 12px
+
+  +max-w($tablet)
+    margin-top: 18px
+    font-size: 9px
+
+.service__link
+  display: flex
+  justify-content: space-between
+  padding: 17px 22px 17px 16px
+  color: #414141
+  font-size: 21px
+  line-height: 1.2
+  font-weight: $font-weight-semi-bold
+  text-decoration: none
+
+  +max-w($desktop)
+    padding: 12px 17px 12px 11px
+    font-size: 15px
+
+  +max-w($laptop)
+    font-size: 14px
+
+  +max-w($tablet)
+    padding-top: 8px
+    padding-bottom: 8px
+    font-size: 11px
+
+.service__icon
+
+  +max-w($laptop)
+    display: none

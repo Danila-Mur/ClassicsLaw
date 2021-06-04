@@ -1,0 +1,54 @@
+-
+  var serviceList = [
+    { link: 'Трудовые споры',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Жилищные споры',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Земельные споры',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Семейные споры',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Защита прав потребителя',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Кредитные споры',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Автоюрист ',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Банкротство',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Споры с застройщиком',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Консультация с юристом',
+      arrow: "images/service-arrow.svg"
+    },
+    {
+      link: 'Бизнес юрист',
+      arrow: "images/service-arrow.svg"
+    }
+  ]
+
+ul.service__list 
+  each item in serviceList
+    li.service__item 
+      a.service__link(href="#")= item.link
+        img.service__icon(src=`${item.arrow}` , alt="Arrow right")
+  p.service__list-text 
+    | Цель нашей компании - предложение широкого ассортимента товаров и услуг на постоянно высоком качестве обслуживания.
