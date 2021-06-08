@@ -48,12 +48,17 @@
     margin-bottom: 26px
     padding: 22px 13px 11px 33px
 
-  +max-w($mobile)
+  +max-w($tablet)
+    display: grid
+    grid-template-columns: 1fr 1fr
     margin-bottom: 0
     padding: 24px 30px 18px 33px
 
   +max-w($mobile)
     padding: 17px
+
+.header__logo
+  grid-column: 1 / 2
 
 .header__menu
   display: flex

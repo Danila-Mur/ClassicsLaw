@@ -20,6 +20,7 @@
   line-height: 1.25
   text-decoration: none
   text-transform: uppercase
+  cursor: pointer
 
   +max-w($desktop)
     font-size: 18px
@@ -30,6 +31,7 @@
 
 
 .nav__item 
+  position: relative
   
   &:hover
     .nav__link
@@ -37,6 +39,38 @@
 
     .nav__link-img path
       fill: #65C466
+
+.nav__search
+  position: absolute
+  display: none
+  top: 70px
+  right: 10px
+  max-width: 206px
+  padding: 13px 50px 12px 11px
+  outline: none
+  border: none
+  border-radius: 10px
+  background: #FFFFFF
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+  background-image: url('../navigation/search.svg')
+  background-repeat: no-repeat
+  background-position: 160px 6px
+  font-size: 18px
+  line-height: 1.2
+
+  +max-w($desktop)
+    top: 50px
+    // max-width: 150px
+    padding: 10px 34px 10px 11px
+    background-size: 24px
+    background-position: 170px 10px
+
+  +max-w($laptop)
+    top: 30px
+    background-size: 20px
+
+.nav__search--active
+  display: flex
 
 .nav__link--current
   border: 2px solid #65C466
@@ -111,6 +145,7 @@
   +max-w($tablet)
     position: relative
     display: block
+    justify-self: end
     width: 49px
     height: 49px
     border-radius: 50%
