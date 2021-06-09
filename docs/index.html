@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Классика права</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="./webpack/images/favicon-c1ad7af8.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="./webpack/images/apple-touch-icon-c119051e.png" type="image/png">
+        <link rel="stylesheet" href="webpack/css/vendors.css?179f1047f01">
+        <link rel="stylesheet" href="webpack/css/app.css?179f1047f01">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__content-top"><a class="header__logo" href="#">
+                            <picture> 
+                                <source srcset="images/logo-mobile.svg" media="(max-width: 320px)">
+                                <source srcset="images/logo-tablet.svg" media="(max-width: 790px)">
+                                <source srcset="images/logo-laptop.svg" media="(max-width: 1024px)">
+                                <source srcset="images/logo-desktop.svg" media="(max-width: 1500px)"><img src="images/logo.png" alt="logo">
+                            </picture></a>
+                        <div class="header__menu"><a class="header__menu-phone" href="tel:+70000000000">+7 (000) 000-00-00<span class="header__menu-phone__description">Бесплатная консультация</span></a><a class="header__menu-request" href="#"> Заказать звонок</a><a class="header__menu-registration" href="#"> Войти/регестрация
+                                <picture> 
+                                    <source srcset="images/person-desktop.svg" media="(max-width: 1500px)"><img class="header__menu-registration-img" src="images/person.svg" alt="Person">
+                                </picture></a></div>
+                        <div class="nav__burger js-burger"><span class="nav__burger-item"></span></div>
+                        <div class="header-mobile"> 
+                            <input class="header-mobile__search" type="text">
+                            <nav class="header-mobile__menu"> 
+                                <ul class="header-mobile__list">
+                                    <li class="header-mobile__item"> <a class="header-mobile__link" href="#"> Компания<img class="header-mobile__img" src="images/arrow-down-mobile.svg" alt="Arrow down"></a></li>
+                                    <li class="header-mobile__item"> <a class="header-mobile__link header-mobile__link--open" href="#"> Каталог<img class="header-mobile__img" src="images/arrow-down-mobile.svg" alt="Arrow down"></a>
+                                        <ul class="header-mobile__sublist">
+                                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="#">Оконные системы</a></li>
+                                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="#">Фасадные системы</a></li>
+                                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="#">Уличная мебель</a></li>
+                                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="#">Мультимедиа проекторы</a></li>
+                                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="#">Цветные МФУ</a></li>
+                                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="#">Измерительное оборудование</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header-mobile__item"> <a class="header-mobile__link" href="#"> Контакты</a></li>
+                                    <li class="header-mobile__item"> <a class="header-mobile__link" href="#"> Вопросы-ответы</a></li>
+                                    <li class="header-mobile__item"> <a class="header-mobile__link" href="#"> Прайс-лист</a></li>
+                                    <li class="header-mobile__item"> <a class="header-mobile__link" href="#"> Услуги</a></li>
+                                </ul>
+                            </nav><a class="header-mobile-phone" href="tel:+70000000000">+7 (000) 000-00-00<span class="header-mobile-phone__description">Бесплатная консультация</span></a><a class="header-mobile-request" href="#"> Заказать звонок</a><a class="header-mobile-registration" href="#"> Войти/регестрация<img class="header-mobile-registration-img" src="images/person.svg" alt="Person"></a>
+                        </div>
+                    </div>
+                    <div class="header__content-bottom">
+                        <nav class="nav js-open-nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"> <a class="nav__link nav__link--current" href="#">Компания
+                                        <svg class="nav__link-img nav__link-img--arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4393 15.0088L24.4037 2.48302C24.7543 2.06835 24.7442 1.40758 24.3812 1.00712C24.0271 0.616439 23.4657 0.616456 23.1117 1.00715L12.7933 12.795L2.47416 1.00778C2.11736 0.600283 1.53893 0.600301 1.18216 1.00782C0.825438 1.41546 0.825458 2.07616 1.1822 2.48372L12.1473 15.0089C12.5042 15.4164 13.0826 15.4164 13.4393 15.0088Z" fill="#414141"></path>
+                                        </svg></a></li>
+                                <li class="nav__item nav__item--active"> <a class="nav__link" href="#">каталог
+                                        <svg class="nav__link-img nav__link-img--arrow" width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.4393 15.0088L24.4037 2.48302C24.7543 2.06835 24.7442 1.40758 24.3812 1.00712C24.0271 0.616439 23.4657 0.616456 23.1117 1.00715L12.7933 12.795L2.47416 1.00778C2.11736 0.600283 1.53893 0.600301 1.18216 1.00782C0.825438 1.41546 0.825458 2.07616 1.1822 2.48372L12.1473 15.0089C12.5042 15.4164 13.0826 15.4164 13.4393 15.0088Z" fill="#414141"></path>
+                                        </svg></a>
+                                    <ul class="nav__sub-list nav__sub-list--two">
+                                        <li class="nav__sub-item undefined"> <a class="nav__sub-link" href="#">Оконные системы</a><img class="sub__nav-img" src="images/arrow-right-menu.svg" alt="Arrow">
+                                        </li>
+                                        <li class="nav__sub-item nav__item--active"> <a class="nav__sub-link" href="#">Фасадные системы</a><img class="sub__nav-img" src="images/arrow-right-menu.svg" alt="Arrow">
+                                            <ul class="nav__sub-list nav__sub-list--three">
+                                                <li class="nav__sub-item"><a class="nav__sub-link" href="#">Структурный фасад</a></li>
+                                                <li class="nav__sub-item"><a class="nav__sub-link" href="#">Полуструктурный “горизонтальная линия”</a></li>
+                                                <li class="nav__sub-item"><a class="nav__sub-link" href="#">Цветные МФУ</a></li>
+                                                <li class="nav__sub-item"><a class="nav__sub-link" href="#">Измерительное оборудование</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav__sub-item undefined"> <a class="nav__sub-link" href="#">Уличная мебель</a><img class="sub__nav-img" src="images/arrow-right-menu.svg" alt="Arrow">
+                                        </li>
+                                        <li class="nav__sub-item undefined"> <a class="nav__sub-link" href="#">Мультимедиа проекторы</a><img class="sub__nav-img" src="images/arrow-right-menu.svg" alt="Arrow">
+                                        </li>
+                                        <li class="nav__sub-item undefined"> <a class="nav__sub-link" href="#">Цветные МФУ</a><img class="sub__nav-img" src="images/arrow-right-menu.svg" alt="Arrow">
+                                        </li>
+                                        <li class="nav__sub-item undefined"> <a class="nav__sub-link" href="#">Измерительное оборудование</a><img class="sub__nav-img" src="images/arrow-right-menu.svg" alt="Arrow">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item"> <a class="nav__link" href="#">контакты</a></li>
+                                <li class="nav__item"> <a class="nav__link" href="#">вопросы-ответы </a></li>
+                                <li class="nav__item"> <a class="nav__link" href="#">прайс-лист</a></li>
+                                <li class="nav__item"> <a class="nav__link" href="#">Услуги  </a></li>
+                                <li class="nav__item"> 
+                                    <input class="nav__search js-nav-search" type="text"><a class="nav__link js-nav-link">
+                                        <svg class="nav__link-img nav__link-img--search" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M34.5964 32.0458L24.6868 22.1362C26.5663 19.8157 27.6977 16.8657 27.6977 13.6539C27.6977 6.20826 21.6401 0.150696 14.1945 0.150696C6.74891 0.150696 0.691406 6.20826 0.691406 13.6539C0.691406 21.0995 6.74898 27.1571 14.1946 27.1571C17.4064 27.1571 20.3564 26.0256 22.6769 24.1461L32.5865 34.0557C32.8641 34.3332 33.314 34.3332 33.5916 34.0557L34.5965 33.0509C34.874 32.7733 34.874 32.3233 34.5964 32.0458ZM14.1946 24.3143C8.31612 24.3143 3.5342 19.5324 3.5342 13.6539C3.5342 7.77541 8.31612 2.99349 14.1946 2.99349C20.0731 2.99349 24.855 7.77541 24.855 13.6539C24.855 19.5324 20.0731 24.3143 14.1946 24.3143Z" fill="#414141"></path>
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <main class="main">
+                    <section class="question">
+                        <div class="container">
+                            <div class="question__wrap">
+                                <div class="question__content">
+                                    <h1 class="question__content-title">Задайте вопрос юристу онлайн</h1>
+                                    <div class="question__content-description">
+                                        <p class="question__content-text">
+                                             Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.</p>
+                                        <div class="question__icon"><img class="question__icon-img" src="images/online.svg" alt="Online"><span class="question__icon-text">30 онлайн</span></div>
+                                    </div>
+                                    <form class="question__form" action="#"> 
+                                        <input class="question__form-input" type="number" placeholder="Введите номер Вашего телефона">
+                                        <textarea class="question__form-textare" placeholder="Введите Ваш вопрос..."> </textarea>
+                                        <div class="question__form-checkbox">
+                                            <input class="question__form-item question__form-item--custom" id="policy" type="checkbox" name="policy">
+                                            <label for="policy"> Нажимая кнопку “Отправить” вы соглашаетесь с политикой конфидециальности</label>
+                                        </div>
+                                        <button class="question__form-submit" type="submit">Отправить вопрос</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="support">
+                        <div class="container"> 
+                            <div class="support__content"> 
+                                <div class="support__clip"></div>
+                                <div class="support__card"> 
+                                    <h2 class="support__card-title">ЮРИСТЫ ДЛЯ БИЗНЕСА</h2>
+                                    <p class="support__card-text">Сопровождение юридических лиц во всех областях права</p>
+                                    <button class="support__card-button" type="button"> Заказать звонок </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="services">
+                        <div class="container">
+                            <div class="services__header"> 
+                                <h2 class="services__header-title">Предоставляемые услуги</h2>
+                                <p class="services__header-text">
+                                     Компания специализируется на оказании широкого спектра услуг как для корпоративных клиентов так и для частных лиц. Профессионализм и ответственность ключевые преимущества нашей компании.</p>
+                            </div>
+                            <!-- Slider main container-->
+                            <div class="services__container">
+                                <div class="services__slider services__swiper-container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-1.jpg') no-repeat center/cover;"><span class="services__card-title">Строительство зданий</span>
+                                            <p class="services__card-text">Осуществляется от имени и в интересах лиц, участвующих в деле: сторон, третьих лиц, заявителей и иных заинтересованных лиц.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-2.jpg') no-repeat center/cover;"><span class="services__card-title">Ремонт оборудования</span>
+                                            <p class="services__card-text">Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компаний.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-3.jpg') no-repeat center/cover;"><span class="services__card-title">Курсы английского</span>
+                                            <p class="services__card-text">Проверка финансово-экономической деятельности организации, проводимая аудитором.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-1.jpg') no-repeat center/cover;"><span class="services__card-title">Строительство зданий</span>
+                                            <p class="services__card-text">Осуществляется от имени и в интересах лиц, участвующих в деле: сторон, третьих лиц, заявителей и иных заинтересованных лиц.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-2.jpg') no-repeat center/cover;"><span class="services__card-title">Ремонт оборудования</span>
+                                            <p class="services__card-text">Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компаний.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-3.jpg') no-repeat center/cover;"><span class="services__card-title">Курсы английского</span>
+                                            <p class="services__card-text">Проверка финансово-экономической деятельности организации, проводимая аудитором.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-1.jpg') no-repeat center/cover;"><span class="services__card-title">Строительство зданий</span>
+                                            <p class="services__card-text">Осуществляется от имени и в интересах лиц, участвующих в деле: сторон, третьих лиц, заявителей и иных заинтересованных лиц.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                        <div class="swiper-slide services__card" style="background:  linear-gradient(180deg, #414141 -49.24%, rgba(65, 65, 65, 0) 120.35%), linear-gradient(0deg, #65C466 0%, rgba(37, 137, 249, 0) 23.16%), url('images/card-img-2.jpg') no-repeat center/cover;"><span class="services__card-title">Ремонт оборудования</span>
+                                            <p class="services__card-text">Частичная или полная передача работ по поддержке, обслуживанию и модернизации ИТ-инфраструктуры в руки компаний.</p><a class="services__card-link" href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"> </div>
+                                </div>
+                                <div class="swiper-button-prev swiper-button-prev--services button__slider"><img class="button__slider-img" src="images/arrow-left.svg" alt="Arrow left"></div>
+                                <div class="swiper-button-next swiper-button-next--services button__slider"><img class="button__slider-img" src="images/arrow-right.svg" alt="Arrow right"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="advantages">
+                        <div class="container">
+                            <div class="advantages__header"> 
+                                <h2 class="advantages__header-title">Наши преимущества </h2><span class="advantages__header-text">Команда опытных юристов </span>
+                            </div>
+                            <div class="advantages__cards"> <a class="advantages__card" href="#"> 
+                                    <div class="advantages__card-wrap">
+                                        <div class="advantages__card-item">
+                                            <picture> <img class="advantages__card-img" src="images/advantages-card-1.svg" alt="Advantages card"></picture>
+                                        </div><span class="advantages__card-title">Низкие цены и широкий ассортимент </span>
+                                    </div>
+                                    <p class="advantages__card-text">Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке дальнейших направлений развития.</p></a><a class="advantages__card" href="#"> 
+                                    <div class="advantages__card-wrap">
+                                        <div class="advantages__card-item">
+                                            <picture> <img class="advantages__card-img" src="images/advantages-card-2.svg" alt="Advantages card"></picture>
+                                        </div><span class="advantages__card-title">Широкая сеть представительств </span>
+                                    </div>
+                                    <p class="advantages__card-text">Таким образом консультация с широким активом способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p></a><a class="advantages__card" href="#"> 
+                                    <div class="advantages__card-wrap">
+                                        <div class="advantages__card-item">
+                                            <picture> <img class="advantages__card-img" src="images/advantages-card-3.svg" alt="Advantages card"></picture>
+                                        </div><span class="advantages__card-title">Весь товар сертифицирован </span>
+                                    </div>
+                                    <p class="advantages__card-text">С другой стороны консультация с широким активом позволяет оценить значение новых предложений. Значимость этих проблем настолько очевидна, что реализация намеченных планов.</p></a><a class="advantages__card" href="#"> 
+                                    <div class="advantages__card-wrap">
+                                        <div class="advantages__card-item">
+                                            <picture> <img class="advantages__card-img" src="images/advantages-card-4.svg" alt="Advantages card"></picture>
+                                        </div><span class="advantages__card-title">Оперативная доставка и выгрузка товара</span>
+                                    </div>
+                                    <p class="advantages__card-text">Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации позиций.</p></a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="help"> 
+                        <div class="container"> 
+                            <div class="help__inner"> 
+                                <div class="help__content"> 
+                                    <h2 class="help__content-title">Юридическая помощь <span class="help__content-title help__content-title--black">начинается с консультации</span></h2>
+                                    <div class="help__content-description"> <span class="description-item">Заполните форму заявки , что бы получить первую бесплатную консультацию по Вашей ситуации</span><span class="description-item">Наш менеджер свяжется с вами в ближайшее время </span></div>
+                                </div>
+                                <picture class="help__bg">
+                                    <source srcset="images/iphone-mobile.png" media="(max-width: 420px)">
+                                    <source srcset="images/iphone-tablet.png" media="(max-width: 790px)">
+                                    <source srcset="images/iphone-laptop.png" media="(max-width: 1024px)">
+                                    <source srcset="images/iphone-desktop.png" media="(max-width: 1500px)"><img src="images/iphone.png" alt="Iphone">
+                                </picture>
+                                <form class="help__form" action="#"> 
+                                    <label class="help__form-label" for="#">Введите Ваше имя</label>
+                                    <input class="help__form-input help__form-input--person" type="text">
+                                    <label class="help__form-label" for="#">Введите номер телефона</label>
+                                    <input class="help__form-input help__form-input--tel js-input" type="tel">
+                                    <button class="help__form-submit" type="submit">Получить консультацию </button><span class="help__form-data">Нажимая на кнопку, Вы даете согласие на обработку <a class="help__form-link" href="#"> персональных данных</a></span>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="feedback">
+                        <div class="container">
+                            <div class="feedback__header"> 
+                                <h2 class="feedback__header-title">Отзывы</h2>
+                                <p class="feedback__header-text">
+                                     За долгое время работы, мы собрали десятки отзывов, которые помогут свормировать мнение о нашей работе </p>
+                            </div>
+                            <!-- Slider main container-->
+                            <div class="feedback__container">
+                                <div class="feedback__slider feedback__swiper-container swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide feedback__card">
+                                            <div class="feedback__stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars">
+                                            </div>
+                                            <p class="feedback__description">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей </p>
+                                            <div class="feedback__card-wrappper">
+                                                <picture> 
+                                                    <source srcset="images/avatar-laptop.jpg" media="(max-width: 1024px)">
+                                                    <source srcset="images/avatar-desktop.jpg" media="(max-width: 1500px)"><img class="feedback__avatar" src="images/avatar.jpg" alt="Avatar">
+                                                </picture>
+                                                <div class="feedback__wrapp"> <span class="feedback__wrapp-name">Алексей.К.В</span><span class="feedback__wrapp-company">ООО “Энергон”</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feedback__card">
+                                            <div class="feedback__stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars">
+                                            </div>
+                                            <p class="feedback__description">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей </p>
+                                            <div class="feedback__card-wrappper">
+                                                <picture> 
+                                                    <source srcset="images/avatar-laptop.jpg" media="(max-width: 1024px)">
+                                                    <source srcset="images/avatar-desktop.jpg" media="(max-width: 1500px)"><img class="feedback__avatar" src="images/avatar.jpg" alt="Avatar">
+                                                </picture>
+                                                <div class="feedback__wrapp"> <span class="feedback__wrapp-name">Алексей.К.В</span><span class="feedback__wrapp-company">ООО “Энергон”</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feedback__card">
+                                            <div class="feedback__stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars">
+                                            </div>
+                                            <p class="feedback__description">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей </p>
+                                            <div class="feedback__card-wrappper">
+                                                <picture> 
+                                                    <source srcset="images/avatar-laptop.jpg" media="(max-width: 1024px)">
+                                                    <source srcset="images/avatar-desktop.jpg" media="(max-width: 1500px)"><img class="feedback__avatar" src="images/avatar.jpg" alt="Avatar">
+                                                </picture>
+                                                <div class="feedback__wrapp"> <span class="feedback__wrapp-name">Алексей.К.В</span><span class="feedback__wrapp-company">ООО “Энергон”</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feedback__card">
+                                            <div class="feedback__stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars">
+                                            </div>
+                                            <p class="feedback__description">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей </p>
+                                            <div class="feedback__card-wrappper">
+                                                <picture> 
+                                                    <source srcset="images/avatar-laptop.jpg" media="(max-width: 1024px)">
+                                                    <source srcset="images/avatar-desktop.jpg" media="(max-width: 1500px)"><img class="feedback__avatar" src="images/avatar.jpg" alt="Avatar">
+                                                </picture>
+                                                <div class="feedback__wrapp"> <span class="feedback__wrapp-name">Алексей.К.В</span><span class="feedback__wrapp-company">ООО “Энергон”</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feedback__card">
+                                            <div class="feedback__stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars">
+                                            </div>
+                                            <p class="feedback__description">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей </p>
+                                            <div class="feedback__card-wrappper">
+                                                <picture> 
+                                                    <source srcset="images/avatar-laptop.jpg" media="(max-width: 1024px)">
+                                                    <source srcset="images/avatar-desktop.jpg" media="(max-width: 1500px)"><img class="feedback__avatar" src="images/avatar.jpg" alt="Avatar">
+                                                </picture>
+                                                <div class="feedback__wrapp"> <span class="feedback__wrapp-name">Алексей.К.В</span><span class="feedback__wrapp-company">ООО “Энергон”</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feedback__card">
+                                            <div class="feedback__stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars"><img class="feedback__star" src="images/star.svg" alt="Stars">
+                                            </div>
+                                            <p class="feedback__description">В результате действий команды юристов удалось взыскать задолженость в размере 7 045 515 рублей </p>
+                                            <div class="feedback__card-wrappper">
+                                                <picture> 
+                                                    <source srcset="images/avatar-laptop.jpg" media="(max-width: 1024px)">
+                                                    <source srcset="images/avatar-desktop.jpg" media="(max-width: 1500px)"><img class="feedback__avatar" src="images/avatar.jpg" alt="Avatar">
+                                                </picture>
+                                                <div class="feedback__wrapp"> <span class="feedback__wrapp-name">Алексей.К.В</span><span class="feedback__wrapp-company">ООО “Энергон”</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination feedback__pagination"></div>
+                                </div>
+                                <div class="swiper-button-prev swiper-button-prev--feedback button__slider">
+                                    <picture> 
+                                        <source srcset="images/arrow-left.svg" media="(max-width: 420px)"><img class="button__slider-img" src="images/arrow-left-feedback.svg" alt="Arrow left">
+                                    </picture>
+                                </div>
+                                <div class="swiper-button-next swiper-button-next--feedback button__slider">
+                                    <picture> 
+                                        <source srcset="images/arrow-right.svg" media="(max-width: 420px)"><img class="button__slider-img" src="images/arrow-right-feedback.svg" alt="Arrow right">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer class="footer">
+                <div class="container"> 
+                    <div class="footer__inner"> 
+                        <div class="footer__content"><span class="footer__rights">2021 Все права защищены </span>
+                            <div class="footer__social"> <a class="footer__social-link" href="#"> <img class="footer__social-img" src="images/youtube.svg" alt="Youtube"></a><a class="footer__social-link" href="#"> <img class="footer__social-img" src="images/vk.svg" alt="Vkontakte"><a class="footer__social-link" href="#"> <img class="footer__social-img" src="images/instagram.svg" alt="Instagram"></a></a></div>
+                            <div class="footer__connection footer__connection--mobile"><a class="footer__connection-phone" href="tel:+70000000000">+7 (000) <span class="footer__connection-phone--white">000-00-00</span></a><a class="footer__connection-mail" href="mailto:info@classica-prava">info@classica-prava</a></div>
+                        </div>
+                        <div class="footer__nav"> 
+                            <ul class="footer__list"> 
+                                <li class="footer__item"> <a class="footer__link" href="#"> каталог</a></li>
+                                <li class="footer__item"> <a class="footer__link" href="#"> Прайс&nbsp;лист</a></li>
+                                <li class="footer__item"> <a class="footer__link" href="#"> Услуги</a></li>
+                                <li class="footer__item"> <a class="footer__link" href="#"> Компания</a></li>
+                                <li class="footer__item"> <a class="footer__link" href="#"> Вопросы&nbsp;и&nbsp;ответы </a></li>
+                                <li class="footer__item"> <a class="footer__link" href="#"> Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__connection"><a class="footer__connection-phone" href="tel:+70000000000">+7 (000) <span class="footer__connection-phone--white">000-00-00</span></a><a class="footer__connection-mail" href="mailto:info@classica-prava">info@classica-prava</a></div><span class="footer__copyright">Г. Красноярск  ООО “Класика Права” </span><span class="footer__rights footer__rights--mobile">2021 Все права защищены </span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="webpack/js/vendors.js?179f1047f01"></script>
+        <script src="webpack/js/app.js?179f1047f01"></script>
+    </body>
+</html>
