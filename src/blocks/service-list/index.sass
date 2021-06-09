@@ -51,6 +51,12 @@
   font-weight: $font-weight-semi-bold
   text-decoration: none
 
+  &:hover
+    color: #65C466
+
+    .service__icon
+      fill: #65C466
+
   +max-w($desktop)
     padding: 12px 17px 12px 11px
     font-size: 15px
@@ -63,7 +69,58 @@
     padding-bottom: 8px
     font-size: 11px
 
-.service__icon
+.service__link--acvtive
+  color: #fff
+  background-color: #65C466
 
+  .service__icon
+    display: none
+
+.service__icon
+  
   +max-w($laptop)
     display: none
+
+.service__sublist
+  display: none
+  margin-bottom: 23px
+  padding: 25px 103px 25px 25px
+  background: #F5F6F7
+  border-radius: 10px
+
+  +max-w($desktop)
+    padding: 19px 71px 19px 19px
+
+  +max-w($laptop)
+    padding: 15px 107px 15px 15px
+
+  +max-w($tablet)
+    padding: 15px 57px 14px 14px
+
+.service__subitem
+  margin-bottom: 12px
+
+  &:last-child
+    margin-bottom: 0
+
+  +max-w($desktop)
+    margin-bottom: 9px
+
+  +max-w($laptop)
+    margin-bottom: 7px
+
+.service__sublink
+  color: #919191
+  font-size: 16px
+  line-height: 1.2
+  font-weight: $font-weight-semi-bold
+
+  +max-w($desktop)
+    font-size: 12px
+
+  +max-w($laptop)
+    font-size: 9px
+
+.service__sublink--active
+  color: #65C466
+  

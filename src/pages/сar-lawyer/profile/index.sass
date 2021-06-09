@@ -305,6 +305,11 @@
   &:nth-child(1)
     border-top: 1px solid #22B160
 
+  &:hover
+    
+    .profile__question-img
+      fill: #22B160
+
   +max-w($desktop)
     padding: 14px
     font-size: 14px
@@ -352,22 +357,6 @@
       height: 20px
       margin-right: 9px
 
-    // circle
-    //   fill: #65c466
-
-    //   &:hover
-    //     fill: #FFFFFF
-    //     box-shadow: 0px 4px 30px #65C466
-
-    // path
-    //   fill: #FFFFFF
-
-    //   &:hover
-    //     fill: #65c466
-
-    // // &:hover
-    //   // box-shadow: 0px 4px 30px #65C466
-
   +max-w($desktop)
     font-size: 15px
 
@@ -410,24 +399,17 @@
   margin-right: 7px
   text-decoration: none
 
-  &-img
-    fill: #959AA6 
+  +max-w($desktop)
+    width: 17px
+    height: 17px
 
-    &:hover
-      color: #65C466
-      fill: #65C466
+  +max-w($laptop)
+    width: 13px
+    height: 14px
 
-    +max-w($desktop)
-      width: 17px
-      height: 17px
-
-    +max-w($laptop)
-      width: 13px
-      height: 14px
-
-    +max-w($tablet)
-      width: 12px
-      height: 12px
+  +max-w($tablet)
+    width: 12px
+    height: 12px
 
   +max-w($desktop)
     margin-right: 5px

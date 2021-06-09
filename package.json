@@ -36,6 +36,7 @@
     "html-loader": "^2.1.2",
     "inputmask": "^5.0.5",
     "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
     "node-sass": "^5.0.0",
     "postcss": "^8.2.10",
     "postcss-flexbugs-fixes": "^5.0.2",
