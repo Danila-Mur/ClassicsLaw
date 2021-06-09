@@ -72,7 +72,7 @@ section.agency
     .agency__cards
       each item in agencyCards
         .agency__card 
-          img.agency__card-img(src=`${item.image}`, alt="")
+          img.agency__card-img(src=require(`${item.image}`), alt="")
           span.agency__card-title= item.title  
           p.agency__card-text= item.text
     .wrapper__pageination

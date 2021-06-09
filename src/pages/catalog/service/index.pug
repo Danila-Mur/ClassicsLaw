@@ -53,7 +53,7 @@ section.service
         .service__cards 
           each card in serviceCards
             .service__card 
-              img.service__card-img(src=`${card.image}`, alt="Card image")
+              img.service__card-img(src=require(`${card.image}`), alt="Card image")
               .service__card-wrapper
                 span.service__card-title= card.title 
                 p.service__card-text= card.text

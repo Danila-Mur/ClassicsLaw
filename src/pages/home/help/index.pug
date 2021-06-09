@@ -12,7 +12,7 @@ section.help
         source(srcset="images/iphone-tablet.png", media="(max-width: 790px)")
         source(srcset="images/iphone-laptop.png", media="(max-width: 1024px)")
         source(srcset="images/iphone-desktop.png", media="(max-width: 1500px)")
-        img(src="images/iphone.png", alt="Iphone")
+        img(src=require("images/iphone.png"), alt="Iphone")
       form.help__form(action="#") 
         label.help__form-label(for="#") Введите Ваше имя
         input.help__form-input.help__form-input--person(type="text")

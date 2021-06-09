@@ -7,7 +7,7 @@ header.header
           source(srcset="images/logo-tablet.svg", media="(max-width: 790px)")
           source(srcset="images/logo-laptop.svg", media="(max-width: 1024px)")
           source(srcset="images/logo-desktop.svg", media="(max-width: 1500px)")
-          img(src="images/logo.png", alt="logo")
+          img(src=require("images/logo.png"), alt="logo")
       .header__menu
         a.header__menu-phone(href="tel:+70000000000") +7 (000) 000-00-00
           span.header__menu-phone__description Бесплатная консультация
@@ -15,7 +15,7 @@ header.header
         a.header__menu-registration(href="#")  Войти/регестрация
           picture 
             source(srcset="images/person-desktop.svg", media="(max-width: 1500px)")
-            img.header__menu-registration-img(src="images/person.svg", alt="Person")
+            img.header__menu-registration-img(src=require("images/person.svg"), alt="Person")
       .nav__burger.js-burger
         span.nav__burger-item
       include /layout/header/mobile-navigation/index

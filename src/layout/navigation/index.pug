@@ -55,7 +55,7 @@ nav.nav.js-open-nav
         each item in subNav
           li.nav__sub-item(class=`${item.class}`) 
             a.nav__sub-link(href="#")= item.link
-            img.sub__nav-img(src=`${item.img}`, alt="Arrow")
+            img.sub__nav-img(src=require(`${item.img}`), alt="Arrow")
             if item.level
               ul.nav__sub-list.nav__sub-list--three
                 each element in item.level
