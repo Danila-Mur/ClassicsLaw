@@ -5,6 +5,7 @@ import initAboutCompany from "./about-company";
 import initContacts from "./contacts";
 import initCatalog from "./catalog";
 import initCarLawyer from "./сar-lawyer";
+import initRoot from "./root";
 
 export default () => {
   initHome();
@@ -13,4 +14,5 @@ export default () => {
   initContacts();
   initCatalog();
   initCarLawyer();
+  initRoot();
 };

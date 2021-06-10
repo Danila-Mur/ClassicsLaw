@@ -1,5 +1,5 @@
 import "./index.sass";
-import "./index.pug";
+import "./home.pug";
 
 import "./question";
 import "./support";
